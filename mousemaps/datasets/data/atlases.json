@@ -1,0 +1,94 @@
+{
+    "atlases": {
+        "allen-ccfv3": {
+            "short_name": "Allen CCFv3 (2017)",
+            "long_name": "Allen Mouse Common Coordinate Framework Version 3, 2017 version",
+            "comments": "The CCFv3 is defined in a population-averaged image volume, acquired from 1,675 male C57BL/6J mice using serial two-photon tomography (STPT).",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "files":{
+                "structure-graph-json":{
+                    "format": "json",
+                    "fname": "atl-allenccfv3_structuregraph.json",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "da76eba4231fff6784f72fb4bd959428",
+                    "url": {
+                        "osf": "x9tzg",
+                        "original": "http://api.brain-map.org/api/v2/data/query.json?criteria=model::Structure,rma::criteria,[ontology_id$eq1],rma::options[order$eq'structures.graph_order'][num_rows$eqall][count$eqfalse]"
+                    },
+                    "comments": ""
+                },
+                "structure-graph-csv":{
+                    "format": "csv",
+                    "fname": "atl-allenccfv3_structuregraph.csv",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "0f6ca9a07d00a76ab5b9fd7b3ec6a22c",
+                    "url": {
+                        "osf": "3kpb5",
+                        "original": "http://api.brain-map.org/api/v2/data/query.csv?criteria=model::Structure,rma::criteria,[ontology_id$eq1],rma::options[order$eq'structures.graph_order'][num_rows$eqall][count$eqfalse]"
+                    },
+                    "comments": ""
+                },
+                "structure-mesh": {
+                    "format": "hdf5",
+                    "fname": "atl-allenccfv3_structuremesh.hdf5",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "3ee02e4501b0aa9def9e4a2d2dcf78a8",
+                    "url": {
+                        "osf": "fgchp",
+                        "original": "http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/annotation/ccf_2017/structure_meshes"
+                    },
+                    "comments": ""
+                },
+                "avgatl-10um": {
+                    "format": "nifti",
+                    "fname": "atl-allenccfv3_res-10um_avgatl.nii.gz",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "9487f754fd396bab59f37955ef6c6437",
+                    "url": {
+                        "osf": "56z9a",
+                        "original": "http://download.alleninstitute.org/informatics-archive/mouse_ccf_3_1_mm/average_template/average_template_10.nii.gz"
+                    },
+                    "comments": "Location of nrrd file: http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/average_template"
+                },
+                "avgatl-25um": {
+                    "format": "nifti",
+                    "fname": "atl-allenccfv3_res-25um_avgatl.nii.gz",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "8a3229aa42bd8c48ae0c140f2f7fdf02",
+                    "url": {
+                        "osf": "5xgfs",
+                        "original": "http://download.alleninstitute.org/informatics-archive/mouse_ccf_3_1_mm/average_template/average_template_25.nii.gz"
+                    },
+                    "comments": "Location of nrrd file: http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/average_template"
+                },
+                "avgatl-50um": {
+                    "format": "nifti",
+                    "fname": "atl-allenccfv3_res-50um_avgatl.nii.gz",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "8a780205dfd0c1d6da41f08a511eb3f4",
+                    "url": {
+                        "osf": "8csh9",
+                        "original": "http://download.alleninstitute.org/informatics-archive/mouse_ccf_3_1_mm/average_template/average_template_50.nii.gz"
+                    },
+                    "comments": "Location of nrrd file: http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/average_template"
+                },
+                "avgatl-100um": {
+                    "format": "nifti",
+                    "fname": "atl-allenccfv3_res-100um_avgatl.nii.gz",
+                    "rel_path": "allen/ccfv3",
+                    "checksum": "05e1cc493073c25c5600adf7977895b5",
+                    "url": {
+                        "osf": "4v6x5",
+                        "original": "http://download.alleninstitute.org/informatics-archive/mouse_ccf_3_1_mm/average_template/average_template_100.nii.gz"
+                    },
+                    "comments": "Location of nrrd file: http://download.alleninstitute.org/informatics-archive/current-release/mouse_ccf/average_template"
+                }
+            }
+        }
+    }
+}

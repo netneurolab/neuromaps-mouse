@@ -1,0 +1,62 @@
+{
+    "annotations-meta": [
+        {
+            "source": "zhu2018",
+            "short_name": "synaptome",
+            "long_name": "Architecture of the Mouse Brain Synaptome",
+            "full_desc": {
+                "typedensity": "Synaptic type density",
+                "similarity": "Synaptic similarity"
+            },
+            "comments": "Original source: ",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "aux_files": {
+                "regionmapping": {
+                    "format": "regionmapping",
+                    "fname": "source-zhu2018_regionmapping.csv",
+                    "rel_path": "zhu2018",
+                    "checksum": "9a54e44883916c96f3e80b7a2f823b19",
+                    "url": {
+                        "osf": "v5cpt",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
+        },
+        {
+            "source": "oh2014",
+            "short_name": "structural connectome",
+            "long_name": "A mesoscale connectome of the mouse brain",
+            "full_desc": {
+                "wipsi": "Weighted ipsilateral strength index",
+                "wcontra": "Weighted contralateral strength index"
+            },
+            "comments": "Original source: Supplementary Table 3",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "aux_files": {
+                "regionmapping": {
+                    "format": "regionmapping",
+                    "fname": "source-oh2014_regionmapping.csv",
+                    "rel_path": "oh2014",
+                    "checksum": "a21a9e80e9640b242c81cdc2e2fa456a",
+                    "url": {
+                        "osf": "hmd4j",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
+        }
+    ]
+}

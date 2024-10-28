@@ -1,0 +1,122 @@
+[project]
+name = "mousemaps"
+description = "A toolbox for projecting, resampling, and comparing mouse brain maps"
+readme = "README.rst"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["network neuroscience", "connectomics"]
+authors = [
+  {name = "Network Neuroscience Lab"},
+]
+maintainers = [
+  {name = "Network Neuroscience Lab"},
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: BSD License",
+  "Programming Language :: Python :: 3 :: Only"
+]
+
+dependencies = [
+  "numpy",
+  "scipy",
+  "matplotlib",
+  "scikit-learn",
+  "nibabel",
+  "nilearn"
+]
+
+dynamic=["version"]
+
+[project.optional-dependencies]
+docs = [
+  "sphinx",
+  "sphinx_rtd_theme",
+  "sphinx-gallery"
+]
+pyvista = [
+  "vtk",
+  "pyvista"
+]
+numba = [
+  "numba"
+]
+style = [
+  "flake8",
+  "ruff"
+]
+test = [
+  "coverage",
+  "pytest",
+  "pytest-cov",
+]
+dev = [
+  "ipython"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/netneurolab/mousemaps"
+
+[build-system]
+requires = ["setuptools", "versioneer[toml]"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages]
+find = {}
+
+[tool.setuptools.package-data]
+"*" = ["*.json", "*.bib"]
+
+[tool.setuptools.dynamic]
+version = {attr = "mousemaps.__version__"}
+
+[tool.versioneer]
+VCS = "git"
+style = "pep440"
+versionfile_source = "mousemaps/_version.py"
+versionfile_build = "mousemaps/_version.py"
+tag_prefix = ""
+parentdir_prefix = ""
+
+[tool.ruff]
+
+line-length = 88
+exclude = [
+  "setup.py",
+  "versioneer.py",
+  "mousemaps/_version.py",
+  "docs/conf.py"
+]
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "B", "W", "D", "NPY"]
+ignore = [
+    "B905", # zip() without an explicit strict= parameter
+    # "W605", # Invalid escape sequence: latex
+    "NPY002", # Replace legacy `np.random` call with `np.random.Generator`
+]
+preview = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104", "F401"]
+"test_*" = ["B011"]
+"examples/*" = ["E402", "D"]
+
+[tool.coverage.run]
+source = ["mousemaps"]
+omit = [
+  "mousemaps/_version.py",
+]
+
+[tool.codespell]
+skip = '.git,*.pdf,*.svg,versioneer.py'
+# ignore-words-list = ''

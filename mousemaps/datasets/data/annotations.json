@@ -1,0 +1,80 @@
+{
+    "annotations": [
+        {
+            "format": "tabular",
+            "source": "zhu2018",
+            "desc": "typedensity",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-zhu2018_desc-typedensity_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "zhu2018",
+            "regionmapping": "source-zhu2018_regionmapping.csv",
+            "checksum": "39e3bccff9f4554acaf5f14198c5bbbf",
+            "url": {
+                "osf": "rzjak",
+                "original": ""
+            },
+            "tags": [
+                "synaptome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "zhu2018",
+            "desc": "similarity",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-zhu2018_desc-similarity_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "zhu2018",
+            "regionmapping": "source-zhu2018_regionmapping.csv",
+            "checksum": "30cd659596b71230d7593dd3ae95df71",
+            "url": {
+                "osf": "p3bke",
+                "original": ""
+            },
+            "tags": [
+                "synaptome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "oh2014",
+            "desc": "wipsi",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-oh2014_desc-wipsi_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "oh2014",
+            "regionmapping": "source-oh2014_regionmapping.csv",
+            "checksum": "d5fe5fc0e614ff0c1c06a466f9b6d505",
+            "url": {
+                "osf": "ds49x",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "oh2014",
+            "desc": "wcontra",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-oh2014_desc-wcontra_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "oh2014",
+            "regionmapping": "source-oh2014_regionmapping.csv",
+            "checksum": "efa5aededbd6d7cf8657e0acd813f7b7",
+            "url": {
+                "osf": "xzewd",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        }
+    ]
+}
