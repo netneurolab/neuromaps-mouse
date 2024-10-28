@@ -1,15 +1,10 @@
-import tempfile
-from pathlib import Path
-
 import h5py
-import matplotlib.image
 import matplotlib.pyplot as plt
 import numpy as np
 import trimesh
 from matplotlib import colors as mcolors
 from matplotlib.cm import ScalarMappable
 from matplotlib.collections import LineCollection, PolyCollection
-from matplotlib.colors import Normalize
 from mpl_toolkits.axes_grid1.anchored_artists import AnchoredSizeBar
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 

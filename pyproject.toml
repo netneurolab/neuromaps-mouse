@@ -27,7 +27,8 @@ dependencies = [
   "nibabel",
   "nilearn",
   "pandas",
-  "h5py"
+  "h5py",
+  "trimesh"
 ]
 
 dynamic=["version"]
