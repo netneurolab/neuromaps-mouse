@@ -1,3 +1,4 @@
+"""Statistical functions."""
 
 
 def correlation():

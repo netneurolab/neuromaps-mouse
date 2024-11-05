@@ -1,9 +1,6 @@
+"""Atlas data fetching and loading functions."""
 
-from pathlib import Path
-from mousemaps.datasets.utils import (
-    MOUSEMAPS_ATLASES,
-    get_data_dir, fetch_files
-)
+from mousemaps.datasets.utils import MOUSEMAPS_ATLASES, fetch_files, get_data_dir
 
 
 def get_atlas_dir(data_dir=None):
@@ -26,10 +23,14 @@ def fetch_allenccfv3(which=None, return_single=True, data_dir=None, verbose=1):
     atlas_files = []
     for w in which:
         if w is None or w not in available_files:
-            raise ValueError(f"Invalid 'which' value: {w}. Should be one of {available_files}")
+            raise ValueError(
+                f"Invalid 'which' value: {w}. " f"Should be one of {available_files}"
+            )
         atlas_files.append(atlas["files"][w])
 
-    targ_fname_list = fetch_files(atlas_files, file_type="atlases", data_dir=data_dir, verbose=verbose)
+    targ_fname_list = fetch_files(
+        atlas_files, file_type="atlases", data_dir=data_dir, verbose=verbose
+    )
 
     if len(targ_fname_list) == 1 and return_single:
         return targ_fname_list[0]

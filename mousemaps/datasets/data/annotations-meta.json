@@ -15,14 +15,15 @@
                     "bibkey": ""
                 }
             ],
+            
             "aux_files": {
                 "regionmapping": {
                     "format": "regionmapping",
                     "fname": "source-zhu2018_regionmapping.csv",
                     "rel_path": "zhu2018",
-                    "checksum": "9a54e44883916c96f3e80b7a2f823b19",
+                    "checksum": "fddfe6a918b134a94246a14e1f2a1756",
                     "url": {
-                        "osf": "v5cpt",
+                        "osf": "26krg",
                         "original": ""
                     },
                     "comments": ""
@@ -35,7 +36,9 @@
             "long_name": "A mesoscale connectome of the mouse brain",
             "full_desc": {
                 "wipsi": "Weighted ipsilateral strength index",
-                "wcontra": "Weighted contralateral strength index"
+                "pvalipsi": "P values for wipsi",
+                "wcontra": "Weighted contralateral strength index",
+                "pvalcontra": "P values for wcontra"
             },
             "comments": "Original source: Supplementary Table 3",
             "refs": [
@@ -52,6 +55,223 @@
                     "checksum": "a21a9e80e9640b242c81cdc2e2fa456a",
                     "url": {
                         "osf": "hmd4j",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
+        },
+        {
+            "source": "ero2018",
+            "short_name": "cell type density",
+            "long_name": "A Cell Atlas for the Mouse Brain",
+            "full_desc": {
+                "celldensity": "Density of cell types"
+            },
+            "comments": "Original source: Supplementary Table 2",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "aux_files": {
+                "regionmapping": {
+                    "format": "regionmapping",
+                    "fname": "source-ero2018_regionmapping.csv",
+                    "rel_path": "ero2018",
+                    "checksum": "ecd01018504e97b2fb759dd81d7ea670",
+                    "url": {
+                        "osf": "ncwtk",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
+        },
+        {
+            "source": "lein2006amba",
+            "short_name": "Allen Mouse Brain Atlas",
+            "long_name": "Allen Mouse Brain Atlas",
+            "full_desc": {
+                "sagittalenergy": "Expression energy of sagittal slices",
+                "coronalenergy": "Expression energy of coronal slices"
+            },
+            "comments": "",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "warning": "This is a very large dataset, and may take a long time to download.",
+            "aux_files": {
+                "regionmapping": {
+                    "format": "regionmapping",
+                    "fname": "source-lein2006amba_regionmapping.csv",
+                    "rel_path": "lein2006amba",
+                    "checksum": "2b980e10435356e57f2c78941e03dfd6",
+                    "url": {
+                        "osf": "s38we",
+                        "original": ""
+                    },
+                    "comments": ""
+                },
+                "genemapping": {
+                    "format": "genemapping",
+                    "fname": "source-lein2006amba_genemapping.csv",
+                    "rel_path": "lein2006amba",
+                    "checksum": "768e61a67dd68b7dfdf7971737a7bb7d",
+                    "url": {
+                        "osf": "6zmuh",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
+        },
+        {
+            "source": "yao2023abca",
+            "short_name": "ABC Atlas (MERFISH-C57BL6J-638850)",
+            "long_name": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
+            "full_desc": {
+                "divimean": "Average regional gene expressions at the division level",
+                "strumean": "Average regional gene expressions at the structure level",
+                "subsmean": "Average regional gene expressions at the substructure level",
+                "impdivimean": "Average imputed regional gene expressions at the division level",
+                "impstrumean": "Average imputed regional gene expressions at the structure level",
+                "impsubsmean": "Average imputed regional gene expressions at the substructure level"
+            },
+            "comments": "Averaged hierarchically through substructure, structure, and division levels",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "warning": "This is a very large dataset, and may take a long time to download.",
+            "aux_files": {
+                "regionmapping": [
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-yao2023abca_division_regionmapping.csv",
+                        "rel_path": "yao2023abca",
+                        "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
+                        "url": {
+                            "osf": "547y6",
+                            "original": ""
+                        },
+                        "comments": ""
+                    },
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-yao2023abca_structure_regionmapping.csv",
+                        "rel_path": "yao2023abca",
+                        "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
+                        "url": {
+                            "osf": "a9bsy",
+                            "original": ""
+                        },
+                        "comments": ""
+                    },
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-yao2023abca_substructure_regionmapping.csv",
+                        "rel_path": "yao2023abca",
+                        "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
+                        "url": {
+                            "osf": "z4wqy",
+                            "original": ""
+                        },
+                        "comments": ""
+                    }
+                ],
+                "genemapping": [
+                    {
+                        "format": "genemapping",
+                        "fname": "source-yao2023abca_merfish_genemapping.csv",
+                        "rel_path": "yao2023abca",
+                        "checksum": "d9cee1242bc13374b5e2beeea827de3e",
+                        "url": {
+                            "osf": "fytrb",
+                            "original": ""
+                        },
+                        "comments": ""
+                    },
+                    {
+                        "format": "genemapping",
+                        "fname": "source-yao2023abca_imputed_genemapping.csv",
+                        "rel_path": "yao2023abca",
+                        "checksum": "32f6749d2d172690e225629c70cb7aae",
+                        "url": {
+                            "osf": "xrcgh",
+                            "original": ""
+                        },
+                        "comments": ""
+                    }
+                ]
+            }
+        },
+        {
+            "source": "zhang2023abca",
+            "short_name": "ABC Atlas (Zhuang-ABCA)",
+            "long_name": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
+            "full_desc": {
+                "divimean": "Average regional gene expressions at the division level",
+                "strumean": "Average regional gene expressions at the structure level",
+                "subsmean": "Average regional gene expressions at the substructure level"
+            },
+            "comments": "Averaged hierarchically through substructure, structure, and division levels",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "warning": "This is a very large dataset, and may take a long time to download.",
+            "aux_files": {
+                "regionmapping": [
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-zhang2023abca_division_regionmapping.csv",
+                        "rel_path": "zhang2023abca",
+                        "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
+                        "url": {
+                            "osf": "6qnpk",
+                            "original": ""
+                        },
+                        "comments": ""
+                    },
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-zhang2023abca_structure_regionmapping.csv",
+                        "rel_path": "zhang2023abca",
+                        "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
+                        "url": {
+                            "osf": "xd8k2",
+                            "original": ""
+                        },
+                        "comments": ""
+                    },
+                    {
+                        "format": "regionmapping",
+                        "fname": "source-zhang2023abca_substructure_regionmapping.csv",
+                        "rel_path": "zhang2023abca",
+                        "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
+                        "url": {
+                            "osf": "ehfba",
+                            "original": ""
+                        },
+                        "comments": ""
+                    }
+                ],
+                "genemapping": {
+                    "format": "genemapping",
+                    "fname": "source-zhang2023abca_merfish_genemapping.csv",
+                    "rel_path": "zhang2023abca",
+                    "checksum": "44b16a70c9cd2188d30900c29c2d8ba1",
+                    "url": {
+                        "osf": "xefs4",
                         "original": ""
                     },
                     "comments": ""
