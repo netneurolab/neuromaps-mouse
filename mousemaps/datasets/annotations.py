@@ -5,52 +5,15 @@ from mousemaps.datasets.utils import (
     MOUSEMAPS_ANNOTS_META,
     get_data_dir,
     fetch_files,
+    _annot_full_to_tuple,
+    _filter_annots_by_keys,
+    _match_annots_by_tuple
 )
 
 
 def get_annotation_dir(data_dir=None):
     data_dir = get_data_dir(data_dir=data_dir)
     return data_dir / "annotations"
-
-
-def _annot_full_to_tuple(full_list):
-    return [
-        tuple([annot[key] for key in ["source", "desc", "space", "res"]])
-        for annot in full_list
-    ]
-
-
-def _match_annots_by_tuple(annot_tuple_list):
-    # match all then sort
-    if not isinstance(annot_tuple_list, list):
-        annot_tuple_list = [annot_tuple_list]
-    matched = []
-    for annot_tuple in annot_tuple_list:
-        found = False
-        for annot in MOUSEMAPS_ANNOTS:
-            curr_annot_tuple = tuple(
-                [annot[key] for key in ["source", "desc", "space", "res"]]
-            )
-            if curr_annot_tuple == annot_tuple:
-                matched.append(annot)
-                found = True
-                break
-        if not found:
-            raise ValueError(f"Annotation {annot_tuple} not found in MOUSEMAPS_ANNOTS")
-    return matched
-
-
-def _filter_annots_by_keys(keys_dict):
-    filtered = []
-    for annot in MOUSEMAPS_ANNOTS:
-        for key in ["source", "desc", "space", "res", "format"]:
-            value = keys_dict[key]
-            if value is not None and annot[key] != value:
-                break
-        if keys_dict["tag"] is not None and keys_dict["tag"] not in annot["tags"]:
-            break
-        filtered.append(annot)
-    return filtered
 
 
 def available_annotations(

@@ -1,12 +1,14 @@
 """Atlas data fetching and loading functions."""
 
-from mousemaps.datasets.utils import MOUSEMAPS_ATLASES, fetch_files, get_data_dir
-
+from mousemaps.datasets.utils import (
+    MOUSEMAPS_ATLASES,
+    fetch_files,
+    get_data_dir
+)
 
 def get_atlas_dir(data_dir=None):
     data_dir = get_data_dir(data_dir=data_dir)
     return data_dir / "atlases"
-
 
 def fetch_allenccfv3(which=None, return_single=True, data_dir=None, verbose=1):
     data_dir = get_data_dir(data_dir=data_dir)

@@ -42,7 +42,14 @@ Functions to fetch the atlases
 
    mousemaps.datasets.fetch_allenccfv3
    mousemaps.datasets.fetch_all_atlases
-   mousemaps.datasets.get_atlas_dir
+
+Support functions
+
+.. autosummary::
+   :template: function.rst
+   :toctree: generated/
+
+   mousemaps.datasets.get_data_dir
 
 .. _ref_images:
 

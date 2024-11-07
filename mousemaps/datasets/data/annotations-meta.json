@@ -2,9 +2,9 @@
     "annotations-meta": [
         {
             "source": "zhu2018",
-            "short_name": "synaptome",
-            "long_name": "Architecture of the Mouse Brain Synaptome",
-            "full_desc": {
+            "name": "synaptome",
+            "description": "Architecture of the Mouse Brain Synaptome",
+            "file_desc": {
                 "typedensity": "Synaptic type density",
                 "similarity": "Synaptic similarity"
             },
@@ -15,7 +15,10 @@
                     "bibkey": ""
                 }
             ],
-            
+            "files": [
+                ["zhu2018", "typedensity", "allenccfv3", "region"],
+                ["zhu2018", "similarity", "allenccfv3", "region"]
+            ],
             "aux_files": {
                 "regionmapping": {
                     "format": "regionmapping",
@@ -32,9 +35,9 @@
         },
         {
             "source": "oh2014",
-            "short_name": "structural connectome",
-            "long_name": "A mesoscale connectome of the mouse brain",
-            "full_desc": {
+            "name": "structural connectome",
+            "description": "A mesoscale connectome of the mouse brain",
+            "file_desc": {
                 "wipsi": "Weighted ipsilateral strength index",
                 "pvalipsi": "P values for wipsi",
                 "wcontra": "Weighted contralateral strength index",
@@ -46,6 +49,12 @@
                     "citation": "",
                     "bibkey": ""
                 }
+            ],
+            "files": [
+                ["oh2014", "wipsi", "allenccfv3", "region"],
+                ["oh2014", "pvalipsi", "allenccfv3", "region"],
+                ["oh2014", "wcontra", "allenccfv3", "region"],
+                ["oh2014", "pvalcontra", "allenccfv3", "region"]
             ],
             "aux_files": {
                 "regionmapping": {
@@ -63,9 +72,9 @@
         },
         {
             "source": "ero2018",
-            "short_name": "cell type density",
-            "long_name": "A Cell Atlas for the Mouse Brain",
-            "full_desc": {
+            "name": "cell type density",
+            "description": "A Cell Atlas for the Mouse Brain",
+            "file_desc": {
                 "celldensity": "Density of cell types"
             },
             "comments": "Original source: Supplementary Table 2",
@@ -74,6 +83,9 @@
                     "citation": "",
                     "bibkey": ""
                 }
+            ],
+            "files": [
+                ["ero2018", "celldensity", "allenccfv3", "region"]
             ],
             "aux_files": {
                 "regionmapping": {
@@ -91,20 +103,24 @@
         },
         {
             "source": "lein2006amba",
-            "short_name": "Allen Mouse Brain Atlas",
-            "long_name": "Allen Mouse Brain Atlas",
-            "full_desc": {
+            "name": "Allen Mouse Brain Atlas",
+            "description": "Allen Mouse Brain Atlas",
+            "file_desc": {
                 "sagittalenergy": "Expression energy of sagittal slices",
                 "coronalenergy": "Expression energy of coronal slices"
             },
             "comments": "",
+            "warning": "This is a very large dataset, and may take a long time to download.",
             "refs": [
                 {
                     "citation": "",
                     "bibkey": ""
                 }
             ],
-            "warning": "This is a very large dataset, and may take a long time to download.",
+            "files": [
+                ["lein2006amba", "sagittalenergy", "allenccfv3", "region"],
+                ["lein2006amba", "coronalenergy", "allenccfv3", "region"]
+            ],
             "aux_files": {
                 "regionmapping": {
                     "format": "regionmapping",
@@ -132,9 +148,9 @@
         },
         {
             "source": "yao2023abca",
-            "short_name": "ABC Atlas (MERFISH-C57BL6J-638850)",
-            "long_name": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
-            "full_desc": {
+            "name": "ABC Atlas (MERFISH-C57BL6J-638850)",
+            "description": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
+            "file_desc": {
                 "divimean": "Average regional gene expressions at the division level",
                 "strumean": "Average regional gene expressions at the structure level",
                 "subsmean": "Average regional gene expressions at the substructure level",
@@ -143,13 +159,21 @@
                 "impsubsmean": "Average imputed regional gene expressions at the substructure level"
             },
             "comments": "Averaged hierarchically through substructure, structure, and division levels",
+            "warning": "This is a very large dataset, and may take a long time to download.",
             "refs": [
                 {
                     "citation": "",
                     "bibkey": ""
                 }
             ],
-            "warning": "This is a very large dataset, and may take a long time to download.",
+            "files": [
+                ["yao2023abca", "divimean", "allenccfv3", "region"],
+                ["yao2023abca", "strumean", "allenccfv3", "region"],
+                ["yao2023abca", "subsmean", "allenccfv3", "region"],
+                ["yao2023abca", "impdivimean", "allenccfv3", "region"],
+                ["yao2023abca", "impstrumean", "allenccfv3", "region"],
+                ["yao2023abca", "impsubsmean", "allenccfv3", "region"]
+            ],
             "aux_files": {
                 "regionmapping": [
                     {
@@ -214,21 +238,26 @@
         },
         {
             "source": "zhang2023abca",
-            "short_name": "ABC Atlas (Zhuang-ABCA)",
-            "long_name": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
-            "full_desc": {
+            "name": "ABC Atlas (Zhuang-ABCA)",
+            "description": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
+            "file_desc": {
                 "divimean": "Average regional gene expressions at the division level",
                 "strumean": "Average regional gene expressions at the structure level",
                 "subsmean": "Average regional gene expressions at the substructure level"
             },
             "comments": "Averaged hierarchically through substructure, structure, and division levels",
+            "warning": "This is a very large dataset, and may take a long time to download.",
             "refs": [
                 {
                     "citation": "",
                     "bibkey": ""
                 }
             ],
-            "warning": "This is a very large dataset, and may take a long time to download.",
+            "files": [
+                ["zhang2023abca", "divimean", "allenccfv3", "region"],
+                ["zhang2023abca", "strumean", "allenccfv3", "region"],
+                ["zhang2023abca", "subsmean", "allenccfv3", "region"]
+            ],
             "aux_files": {
                 "regionmapping": [
                     {
