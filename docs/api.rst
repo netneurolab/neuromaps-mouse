@@ -1,6 +1,6 @@
 .. _api_ref:
 
-.. currentmodule:: mousemaps
+.. currentmodule:: neuromaps_mouse
 
 Reference API
 =============
@@ -10,13 +10,13 @@ Reference API
 
 .. _ref_datasets:
 
-:mod:`mousemaps.datasets` - Dataset fetchers
+:mod:`neuromaps_mouse.datasets` - Dataset fetchers
 --------------------------------------------
-.. automodule:: mousemaps.datasets
+.. automodule:: neuromaps_mouse.datasets
    :no-members:
    :no-inherited-members:
 
-.. currentmodule:: mousemaps.datasets
+.. currentmodule:: neuromaps_mouse.datasets
 
 Functions to show all available annotations
 
@@ -24,7 +24,7 @@ Functions to show all available annotations
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.datasets.available_annotations
+   neuromaps_mouse.datasets.available_annotations
 
 Functions to fetch and describe the annotations
 
@@ -32,7 +32,7 @@ Functions to fetch and describe the annotations
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.datasets.fetch_annotation
+   neuromaps_mouse.datasets.fetch_annotation
 
 Functions to fetch the atlases
 
@@ -40,8 +40,8 @@ Functions to fetch the atlases
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.datasets.fetch_allenccfv3
-   mousemaps.datasets.fetch_all_atlases
+   neuromaps_mouse.datasets.fetch_allenccfv3
+   neuromaps_mouse.datasets.fetch_all_atlases
 
 Support functions
 
@@ -49,17 +49,17 @@ Support functions
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.datasets.get_data_dir
+   neuromaps_mouse.datasets.get_data_dir
 
 .. _ref_images:
 
-:mod:`mousemaps.images` - Image and surface handling
+:mod:`neuromaps_mouse.images` - Image and surface handling
 ----------------------------------------------------
-.. automodule:: mousemaps.images
+.. automodule:: neuromaps_mouse.images
    :no-members:
    :no-inherited-members:
 
-.. currentmodule:: mousemaps.images
+.. currentmodule:: neuromaps_mouse.images
 
 Functions to load the images and surfaces
 
@@ -67,75 +67,75 @@ Functions to load the images and surfaces
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.images.load_region_data
-   mousemaps.images.load_image_data
+   neuromaps_mouse.images.load_region_data
+   neuromaps_mouse.images.load_image_data
 
 .. _ref_plotting:
 
-:mod:`mousemaps.plotting` - Plotting functions
+:mod:`neuromaps_mouse.plotting` - Plotting functions
 ----------------------------------------------
-.. automodule:: mousemaps.plotting
+.. automodule:: neuromaps_mouse.plotting
    :no-members:
    :no-inherited-members:
 
-.. currentmodule:: mousemaps.plotting
+.. currentmodule:: neuromaps_mouse.plotting
 
 .. autosummary::
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.plotting.plot_allenccfv3_ortho
-   mousemaps.plotting.plot_allenccfv3_ortho_asym
-   mousemaps.plotting.plot_allenccfv3_lightbox
-   mousemaps.plotting.plot_allenccfv3_3d
+   neuromaps_mouse.plotting.plot_allenccfv3_ortho
+   neuromaps_mouse.plotting.plot_allenccfv3_ortho_asym
+   neuromaps_mouse.plotting.plot_allenccfv3_lightbox
+   neuromaps_mouse.plotting.plot_allenccfv3_3d
 
 .. _ref_resampling:
 
-:mod:`mousemaps.resampling` - Resampling workflows
+:mod:`neuromaps_mouse.resampling` - Resampling workflows
 --------------------------------------------------
-.. automodule:: mousemaps.resampling
+.. automodule:: neuromaps_mouse.resampling
     :no-members:
     :no-inherited-members:
 
-.. currentmodule:: mousemaps.resampling
+.. currentmodule:: neuromaps_mouse.resampling
 
 .. autosummary::
     :template: function.rst
     :toctree: generated/
 
-    mousemaps.resampling.query_structure_graph_allenccfv3
-    mousemaps.resampling.get_feature_allenccfv3
-    mousemaps.resampling.align_structures_allenccfv3
-    mousemaps.resampling.match_allenccfv3_structures_fuzzy
+    neuromaps_mouse.resampling.query_structure_graph_allenccfv3
+    neuromaps_mouse.resampling.get_feature_allenccfv3
+    neuromaps_mouse.resampling.align_structures_allenccfv3
+    neuromaps_mouse.resampling.match_allenccfv3_structures_fuzzy
 
 .. _ref_stats:
 
-:mod:`mousemaps.stats` - Statistical functions
+:mod:`neuromaps_mouse.stats` - Statistical functions
 ----------------------------------------------
-.. automodule:: mousemaps.stats
+.. automodule:: neuromaps_mouse.stats
     :no-members:
     :no-inherited-members:
 
-.. currentmodule:: mousemaps.stats
+.. currentmodule:: neuromaps_mouse.stats
 
 .. autosummary::
     :template: function.rst
     :toctree: generated/
 
-    mousemaps.stats.correlation
+    neuromaps_mouse.stats.correlation
 
 .. _ref_transforms:
 
-:mod:`mousemaps.transforms` - Transformations between spaces
+:mod:`neuromaps_mouse.transforms` - Transformations between spaces
 ------------------------------------------------------------
-.. automodule:: mousemaps.transforms
+.. automodule:: neuromaps_mouse.transforms
    :no-members:
    :no-inherited-members:
 
-.. currentmodule:: mousemaps.transforms
+.. currentmodule:: neuromaps_mouse.transforms
 
 .. autosummary::
    :template: function.rst
    :toctree: generated/
 
-   mousemaps.transforms.allenccfv3_to_allenccfv3
+   neuromaps_mouse.transforms.allenccfv3_to_allenccfv3

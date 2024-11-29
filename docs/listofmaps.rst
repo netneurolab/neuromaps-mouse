@@ -3,7 +3,7 @@
 ------------
 List of Maps
 ------------
-This is a complete list of maps available in the `mousemaps` package. 
+This is a complete list of maps available in the `neuromaps_mouse` package. 
 
 ----
 

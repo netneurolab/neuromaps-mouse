@@ -1,2 +1,2 @@
-Contributing to mousemaps
-==========================
+Contributing to neuromaps-mouse
+===============================

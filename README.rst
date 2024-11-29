@@ -1,1 +1,1 @@
-# mousemaps
+# neuromaps-mouse

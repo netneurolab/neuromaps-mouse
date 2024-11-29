@@ -1,5 +1,5 @@
 [project]
-name = "mousemaps"
+name = "neuromaps-mouse"
 description = "A toolbox for projecting, resampling, and comparing mouse brain maps"
 readme = "README.rst"
 requires-python = ">=3.8"
@@ -60,7 +60,7 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/netneurolab/mousemaps"
+"Homepage" = "https://github.com/netneurolab/neuromaps-mouse"
 
 [build-system]
 requires = ["setuptools", "versioneer[toml]"]
@@ -71,21 +71,21 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 include = [
-  "mousemaps",
-  "mousemaps.*"
+  "neuromaps_mouse",
+  "neuromaps_mouse.*"
 ]
 
 [tool.setuptools.package-data]
 "*" = ["*.json", "*.bib"]
 
 [tool.setuptools.dynamic]
-version = {attr = "mousemaps.__version__"}
+version = {attr = "neuromaps_mouse.__version__"}
 
 [tool.versioneer]
 VCS = "git"
 style = "pep440"
-versionfile_source = "mousemaps/_version.py"
-versionfile_build = "mousemaps/_version.py"
+versionfile_source = "neuromaps_mouse/_version.py"
+versionfile_build = "neuromaps_mouse/_version.py"
 tag_prefix = ""
 parentdir_prefix = ""
 
@@ -95,7 +95,7 @@ line-length = 88
 exclude = [
   "setup.py",
   "versioneer.py",
-  "mousemaps/_version.py",
+  "neuromaps_mouse/_version.py",
   "docs/conf.py"
 ]
 target-version = "py38"
@@ -118,9 +118,9 @@ convention = "numpy"
 "examples/*" = ["E402", "D"]
 
 [tool.coverage.run]
-source = ["mousemaps"]
+source = ["neuromaps_mouse"]
 omit = [
-  "mousemaps/_version.py",
+  "neuromaps_mouse/_version.py",
 ]
 
 [tool.codespell]
