@@ -295,6 +295,234 @@
         },
         {
             "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "divctclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-divctclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "structclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-structclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "subsctclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-subsctclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "divctsubclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-divctsubclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "structsubclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-structsubclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "subsctsubclass",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-subsctsubclass_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "divctsupertype",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-divctsupertype_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "structsupertype",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-structsupertype_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "subsctsupertype",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-subsctsupertype_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "divctcluster",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-divctcluster_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "structcluster",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-structcluster_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
+            "source": "yao2023abca",
+            "desc": "subsctcluster",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-yao2023abca_desc-subsctcluster_space-allenccfv3_res-region_tabular.csv",
+            "rel_path": "yao2023abca",
+            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "celltype"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "tabular",
             "source": "zhang2023abca",
             "desc": "divimean",
             "space": "allenccfv3",

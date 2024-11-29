@@ -156,7 +156,19 @@
                 "subsmean": "Average regional gene expressions at the substructure level",
                 "impdivimean": "Average imputed regional gene expressions at the division level",
                 "impstrumean": "Average imputed regional gene expressions at the structure level",
-                "impsubsmean": "Average imputed regional gene expressions at the substructure level"
+                "impsubsmean": "Average imputed regional gene expressions at the substructure level",
+                "divctclass": "Cell type (class) at the division level",
+                "structclass": "Cell type (class) at the structure level",
+                "subsctclass": "Cell type (class) at the substructure level",
+                "divctsubclass": "Cell type (subclass) at the division level",
+                "structsubclass": "Cell type (subclass) at the structure level",
+                "subsctsubclass": "Cell type (subclass) at the substructure level",
+                "divctsupertype": "Cell type (supertype) at the division level",
+                "structsupertype": "Cell type (supertype) at the structure level",
+                "subsctsupertype": "Cell type (supertype) at the substructure level",
+                "divctcluster": "Cell type (cluster) at the division level",
+                "structcluster": "Cell type (cluster) at the structure level",
+                "subsctcluster": "Cell type (cluster) at the substructure level"
             },
             "comments": "Averaged hierarchically through substructure, structure, and division levels",
             "warning": "This is a very large dataset, and may take a long time to download.",
@@ -172,7 +184,19 @@
                 ["yao2023abca", "subsmean", "allenccfv3", "region"],
                 ["yao2023abca", "impdivimean", "allenccfv3", "region"],
                 ["yao2023abca", "impstrumean", "allenccfv3", "region"],
-                ["yao2023abca", "impsubsmean", "allenccfv3", "region"]
+                ["yao2023abca", "impsubsmean", "allenccfv3", "region"],
+                ["yao2023abca", "divctclass", "allenccfv3", "region"],
+                ["yao2023abca", "structclass", "allenccfv3", "region"],
+                ["yao2023abca", "subsctclass", "allenccfv3", "region"],
+                ["yao2023abca", "divctsubclass", "allenccfv3", "region"],
+                ["yao2023abca", "structsubclass", "allenccfv3", "region"],
+                ["yao2023abca", "subsctsubclass", "allenccfv3", "region"],
+                ["yao2023abca", "divctsupertype", "allenccfv3", "region"],
+                ["yao2023abca", "structsupertype", "allenccfv3", "region"],
+                ["yao2023abca", "subsctsupertype", "allenccfv3", "region"],
+                ["yao2023abca", "divctcluster", "allenccfv3", "region"],
+                ["yao2023abca", "structcluster", "allenccfv3", "region"],
+                ["yao2023abca", "subsctcluster", "allenccfv3", "region"]
             ],
             "aux_files": {
                 "regionmapping": [
