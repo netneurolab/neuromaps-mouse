@@ -306,6 +306,51 @@
                     "comments": ""
                 }
             }
+        },
+        {
+            "source": "knox2018",
+            "name": "hi-res connectome",
+            "description": " High-resolution data-driven model of the mouse connectome",
+            "file_desc": {
+                "conndencontra": "Connection density (contralateral)",
+                "conndenipsi": "Connection density (ipsilateral)",
+                "connstrcontra": "Connection strength (contralateral)",
+                "connstripsi": "Connection strength (ipsilateral)",
+                "normconndencontra": "Normalized connection density (contralateral)",
+                "normconndenipsi": "Normalized connection density (ipsilateral)",
+                "normconnstrcontra": "Normalized connection strength (contralateral)",
+                "normconnstripsi": "Normalized connection strength (ipsilateral)"
+            },
+            "comments": "",
+            "refs": [
+                {
+                    "citation": "",
+                    "bibkey": ""
+                }
+            ],
+            "files": [
+                ["knox2018", "conndencontra", "allenccfv3", "region"],
+                ["knox2018", "conndenipsi", "allenccfv3", "region"],
+                ["knox2018", "connstrcontra", "allenccfv3", "region"],
+                ["knox2018", "connstripsi", "allenccfv3", "region"],
+                ["knox2018", "normconndencontra", "allenccfv3", "region"],
+                ["knox2018", "normconndenipsi", "allenccfv3", "region"],
+                ["knox2018", "normconnstrcontra", "allenccfv3", "region"],
+                ["knox2018", "normconnstripsi", "allenccfv3", "region"]
+            ],
+            "aux_files": {
+                "regionmapping": {
+                    "format": "regionmapping",
+                    "fname": "source-knox2018_regionmapping.csv",
+                    "rel_path": "knox2018",
+                    "checksum": "",
+                    "url": {
+                        "osf": "",
+                        "original": ""
+                    },
+                    "comments": ""
+                }
+            }
         }
     ]
 }

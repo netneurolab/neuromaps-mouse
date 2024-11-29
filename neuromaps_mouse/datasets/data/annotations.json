@@ -352,6 +352,158 @@
                 "gene"
             ],
             "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "conndencontra",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-conndencontra_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "conndenipsi",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-conndenipsi_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "connstrcontra",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-connstrcontra_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "connstripsi",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-connstripsi_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "normconndencontra",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-normconndencontra_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "normconndenipsi",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-normconndenipsi_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "normconnstrcontra",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-normconnstrcontra_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
+        },
+        {
+            "format": "matrix",
+            "source": "knox2018",
+            "desc": "normconnstripsi",
+            "space": "allenccfv3",
+            "res": "region",
+            "fname": "source-knox2018_desc-normconnstripsi_space-allenccfv3_res-region_matrix.csv",
+            "rel_path": "knox2018",
+            "regionmapping": "source-knox2018_regionmapping.csv",
+            "checksum": "",
+            "url": {
+                "osf": "",
+                "original": ""
+            },
+            "tags": [
+                "connectome"
+            ],
+            "comments": ""
         }
     ]
 }
