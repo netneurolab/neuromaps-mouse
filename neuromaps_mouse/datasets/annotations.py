@@ -1,6 +1,6 @@
-"""Annotation data fetching and loading functions."""
+"""Functions for annotation data fetching and loading."""
 
-from mousemaps.datasets.utils import (
+from neuromaps_mouse.datasets.utils import (
     MOUSEMAPS_ANNOTS,
     MOUSEMAPS_ANNOTS_META,
     get_data_dir,

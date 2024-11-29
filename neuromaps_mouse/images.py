@@ -1,10 +1,10 @@
-"""Handle data loading and processing."""
+"""Functions for loading and remapping data."""
 
 import numpy as np
 import pandas as pd
 
-from mousemaps.datasets.utils import get_data_dir
-from mousemaps.datasets.annotations import _match_annots_by_tuple
+from neuromaps_mouse.datasets.utils import get_data_dir
+from neuromaps_mouse.datasets.annotations import _match_annots_by_tuple
 
 
 def load_nifti():
@@ -85,6 +85,8 @@ def load_region_data(
     data_dir = get_data_dir(data_dir=data_dir)
 
     annotation_full = _match_annots_by_tuple(annotation)[0]
+
+    # TODO check if the file exists, if not, download it
 
     original_values_path = (
         data_dir

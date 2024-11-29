@@ -53,7 +53,7 @@ def get_config() -> VersioneerConfig:
     cfg.style = "pep440"
     cfg.tag_prefix = ""
     cfg.parentdir_prefix = ""
-    cfg.versionfile_source = "mousemaps/_version.py"
+    cfg.versionfile_source = "neuromaps_mouse/_version.py"
     cfg.verbose = False
     return cfg
 

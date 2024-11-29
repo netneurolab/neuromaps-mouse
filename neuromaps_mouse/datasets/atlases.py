@@ -1,6 +1,6 @@
 """Atlas data fetching and loading functions."""
 
-from mousemaps.datasets.utils import (
+from neuromaps_mouse.datasets.utils import (
     MOUSEMAPS_ATLASES,
     fetch_files,
     get_data_dir

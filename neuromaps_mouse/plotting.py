@@ -1,3 +1,4 @@
+"""Functions for plotting mouse brains."""
 import h5py
 import matplotlib.pyplot as plt
 import numpy as np
@@ -8,8 +9,8 @@ from matplotlib.collections import LineCollection, PolyCollection
 from mpl_toolkits.axes_grid1.anchored_artists import AnchoredSizeBar
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
-from mousemaps.datasets import fetch_allenccfv3
-from mousemaps.resampling import query_structure_graph_allenccfv3
+from neuromaps_mouse.datasets import fetch_allenccfv3
+from neuromaps_mouse.resampling import query_structure_graph_allenccfv3
 
 VIEW_TO_BASIS = {
     "coronal": np.array([1, 0, 0]),

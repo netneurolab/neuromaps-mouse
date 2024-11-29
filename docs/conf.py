@@ -14,17 +14,17 @@ import sys
 # -- Project information -----------------------------------------------------
 
 # Add project name, copyright holder, and author(s)
-project = 'mousemaps'
-copyright = '2024, mousemaps developers'
+project = 'neuromaps-mouse'
+copyright = '2024, neuromaps-mouse developers'
 author = 'Network Neuroscience Lab'
 
 # Import project to get version info
 sys.path.insert(0, os.path.abspath(os.path.pardir))
-import mousemaps  # noqa
+import neuromaps_mouse  # noqa
 # The short X.Y version
-version = mousemaps.__version__
+version = neuromaps_mouse.__version__
 # The full version, including alpha/beta/rc tags
-release = mousemaps.__version__
+release = neuromaps_mouse.__version__
 
 # -- General configuration ---------------------------------------------------
 
@@ -103,7 +103,7 @@ html_css_files = ['theme_overrides.css']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'mousemapsdoc'
+htmlhelp_basename = 'neuromaps_mouse_doc'
 
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {

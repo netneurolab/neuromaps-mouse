@@ -1,4 +1,4 @@
-
+"""Functions for working with datasets."""
 import os
 import json
 import shutil
@@ -14,7 +14,7 @@ except ImportError:
 
 def get_data_dir(data_dir=None):
     if data_dir is None:
-        data_dir = os.environ.get('MOUSEMAPS_DATA', str(Path.home() / 'mousemaps-data'))
+        data_dir = os.environ.get('MOUSEMAPS_DATA', str(Path.home() / 'neuromaps-mouse-data'))
     data_dir = Path(data_dir).expanduser()
     data_dir.mkdir(parents=True, exist_ok=True)
     return data_dir
@@ -36,10 +36,10 @@ def _load_resource_json(relative_path):
     """
     # handling pkg_resources.resource_filename deprecation
     if getattr(importlib.resources, 'files', None) is not None:
-        f_resource = importlib.resources.files("mousemaps") / relative_path
+        f_resource = importlib.resources.files("neuromaps_mouse") / relative_path
     else:
         from pkg_resources import resource_filename
-        f_resource = resource_filename('mousemaps', relative_path)
+        f_resource = resource_filename('neuromaps_mouse', relative_path)
 
     with open(f_resource) as src:
         resource_json = json.load(src)
@@ -252,7 +252,7 @@ def _gen_doc_listofmaps_rst(listofmaps_file):
         "------------",
         ""
         "This is a complete list of maps available "
-        "in the `mousemaps` package. ",
+        "in the `neuromaps_mouse` package. ",
         "\n----\n",
     ]
 
