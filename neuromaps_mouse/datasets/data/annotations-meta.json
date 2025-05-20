@@ -133,7 +133,7 @@
                     },
                     "comments": ""
                 },
-                "genemapping": {
+                "featuremapping": {
                     "format": "genemapping",
                     "fname": "source-lein2006amba_genemapping.csv",
                     "rel_path": "lein2006amba",
@@ -185,16 +185,16 @@
                 ["yao2023abca", "impdivimean", "allenccfv3", "region"],
                 ["yao2023abca", "impstrumean", "allenccfv3", "region"],
                 ["yao2023abca", "impsubsmean", "allenccfv3", "region"],
-                ["yao2023abca", "divctclass", "allenccfv3", "region"],
+                ["yao2023abca", "divictclass", "allenccfv3", "region"],
                 ["yao2023abca", "structclass", "allenccfv3", "region"],
                 ["yao2023abca", "subsctclass", "allenccfv3", "region"],
-                ["yao2023abca", "divctsubclass", "allenccfv3", "region"],
+                ["yao2023abca", "divictsubclass", "allenccfv3", "region"],
                 ["yao2023abca", "structsubclass", "allenccfv3", "region"],
                 ["yao2023abca", "subsctsubclass", "allenccfv3", "region"],
-                ["yao2023abca", "divctsupertype", "allenccfv3", "region"],
+                ["yao2023abca", "divictsupertype", "allenccfv3", "region"],
                 ["yao2023abca", "structsupertype", "allenccfv3", "region"],
                 ["yao2023abca", "subsctsupertype", "allenccfv3", "region"],
-                ["yao2023abca", "divctcluster", "allenccfv3", "region"],
+                ["yao2023abca", "divictcluster", "allenccfv3", "region"],
                 ["yao2023abca", "structcluster", "allenccfv3", "region"],
                 ["yao2023abca", "subsctcluster", "allenccfv3", "region"]
             ],
@@ -234,7 +234,7 @@
                         "comments": ""
                     }
                 ],
-                "genemapping": [
+                "featuremapping": [
                     {
                         "format": "genemapping",
                         "fname": "source-yao2023abca_merfish_genemapping.csv",
@@ -318,7 +318,7 @@
                         "comments": ""
                     }
                 ],
-                "genemapping": {
+                "featuremapping": {
                     "format": "genemapping",
                     "fname": "source-zhang2023abca_merfish_genemapping.csv",
                     "rel_path": "zhang2023abca",
@@ -345,7 +345,7 @@
                 "normconnstrcontra": "Normalized connection strength (contralateral)",
                 "normconnstripsi": "Normalized connection strength (ipsilateral)"
             },
-            "comments": "",
+            "comments": "Note that the matrix is not symmetric. Rows are source regions and columns are target regions. For the contralaeral matrices, several missing columns (targets) are filled with NaN (['EW', 'OV', 'RM', 'RO', 'RPA'] for all 4 variants, and an additional 'VISa' for connection density (conndencontra)).",
             "refs": [
                 {
                     "citation": "",

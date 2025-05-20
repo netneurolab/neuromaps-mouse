@@ -106,7 +106,7 @@
             "regionmapping": "source-oh2014_regionmapping.csv",
             "checksum": "ad507ad2a34b7e211f27946b607ab0de",
             "url": {
-                "osf": "ra7ds",
+                "osf": "hxzy8",
                 "original": ""
             },
             "tags": [
@@ -142,7 +142,7 @@
             "fname": "source-lein2006amba_desc-sagittalenergy_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "lein2006amba",
             "regionmapping": "source-lein2006amba_regionmapping.csv",
-            "genemapping": "source-lein2006amba_genemapping.csv",
+            "featuremapping": "source-lein2006amba_genemapping.csv",
             "checksum": "2f132fba4514ab7f46ca8f4e752abbef",
             "url": {
                 "osf": "m2fjk",
@@ -162,7 +162,7 @@
             "fname": "source-lein2006amba_desc-coronalenergy_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "lein2006amba",
             "regionmapping": "source-lein2006amba_regionmapping.csv",
-            "genemapping": "source-lein2006amba_genemapping.csv",
+            "featuremapping": "source-lein2006amba_genemapping.csv",
             "checksum": "1e0fec49fa260ac0860f0176c9a70153",
             "url": {
                 "osf": "ewc4p",
@@ -182,7 +182,7 @@
             "fname": "source-yao2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "genemapping": "source-yao2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
             "checksum": "d73144d2e205a775d35c21fb910ad3a8",
             "url": {
                 "osf": "8jvzb",
@@ -202,7 +202,7 @@
             "fname": "source-yao2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "genemapping": "source-yao2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
             "checksum": "d5b29bfe1b7846b6435eb184a254229b",
             "url": {
                 "osf": "6pbdu",
@@ -222,7 +222,7 @@
             "fname": "source-yao2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "genemapping": "source-yao2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
             "checksum": "990db1c540e3d581ea3da8e5c209dbaa",
             "url": {
                 "osf": "uv7b5",
@@ -242,7 +242,7 @@
             "fname": "source-yao2023abca_desc-impdivimean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "genemapping": "source-yao2023abca_imputed_genemapping.csv",
+            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
             "checksum": "0c28305968bb562521ca8f81fce0ab2e",
             "url": {
                 "osf": "c83et",
@@ -262,7 +262,7 @@
             "fname": "source-yao2023abca_desc-impstrumean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "genemapping": "source-yao2023abca_imputed_genemapping.csv",
+            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
             "checksum": "993dfd5b301c54d87dca3700b52114db",
             "url": {
                 "osf": "up6b8",
@@ -282,7 +282,7 @@
             "fname": "source-yao2023abca_desc-impsubsmean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "genemapping": "source-yao2023abca_imputed_genemapping.csv",
+            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
             "checksum": "b973ff0ca87cc00654271ad2918adffe",
             "url": {
                 "osf": "pjz4f",
@@ -296,15 +296,15 @@
         {
             "format": "tabular",
             "source": "yao2023abca",
-            "desc": "divctclass",
+            "desc": "divictclass",
             "space": "allenccfv3",
             "res": "region",
-            "fname": "source-yao2023abca_desc-divctclass_space-allenccfv3_res-region_tabular.csv",
+            "fname": "source-yao2023abca_desc-divictclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "",
+            "checksum": "236f17df9f4a109dd9b4d53473abd78b",
             "url": {
-                "osf": "",
+                "osf": "kxa82",
                 "original": ""
             },
             "tags": [
@@ -321,9 +321,9 @@
             "fname": "source-yao2023abca_desc-structclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "ca0e1f509f29e3ae0a01ba6cf3773c72",
             "url": {
-                "osf": "",
+                "osf": "kmzfg",
                 "original": ""
             },
             "tags": [
@@ -340,9 +340,9 @@
             "fname": "source-yao2023abca_desc-subsctclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "d53d30d4f6c16a106c97b92ec5bcf054",
             "url": {
-                "osf": "",
+                "osf": "hv75c",
                 "original": ""
             },
             "tags": [
@@ -353,15 +353,15 @@
         {
             "format": "tabular",
             "source": "yao2023abca",
-            "desc": "divctsubclass",
+            "desc": "divictsubclass",
             "space": "allenccfv3",
             "res": "region",
-            "fname": "source-yao2023abca_desc-divctsubclass_space-allenccfv3_res-region_tabular.csv",
+            "fname": "source-yao2023abca_desc-divictsubclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "",
+            "checksum": "ef81df4222c416ddc17d5924f4ed281e",
             "url": {
-                "osf": "",
+                "osf": "egufd",
                 "original": ""
             },
             "tags": [
@@ -378,9 +378,9 @@
             "fname": "source-yao2023abca_desc-structsubclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "cd3bc01041e10cf558405a788b3f4140",
             "url": {
-                "osf": "",
+                "osf": "b4ve5",
                 "original": ""
             },
             "tags": [
@@ -397,9 +397,9 @@
             "fname": "source-yao2023abca_desc-subsctsubclass_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "1dac5420e06555f642185160b19376d0",
             "url": {
-                "osf": "",
+                "osf": "bm4kg",
                 "original": ""
             },
             "tags": [
@@ -410,15 +410,15 @@
         {
             "format": "tabular",
             "source": "yao2023abca",
-            "desc": "divctsupertype",
+            "desc": "divictsupertype",
             "space": "allenccfv3",
             "res": "region",
-            "fname": "source-yao2023abca_desc-divctsupertype_space-allenccfv3_res-region_tabular.csv",
+            "fname": "source-yao2023abca_desc-divictsupertype_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "",
+            "checksum": "bd42bbddc7e90a4c70c3f8c73880d7a6",
             "url": {
-                "osf": "",
+                "osf": "mt6r8",
                 "original": ""
             },
             "tags": [
@@ -435,9 +435,9 @@
             "fname": "source-yao2023abca_desc-structsupertype_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "f1fbd16053eb10bd25da52a8c9a72516",
             "url": {
-                "osf": "",
+                "osf": "v3rbu",
                 "original": ""
             },
             "tags": [
@@ -454,9 +454,9 @@
             "fname": "source-yao2023abca_desc-subsctsupertype_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "78c9f968b12a9ffd106b45b15fb9baef",
             "url": {
-                "osf": "",
+                "osf": "cwfvr",
                 "original": ""
             },
             "tags": [
@@ -467,15 +467,15 @@
         {
             "format": "tabular",
             "source": "yao2023abca",
-            "desc": "divctcluster",
+            "desc": "divictcluster",
             "space": "allenccfv3",
             "res": "region",
-            "fname": "source-yao2023abca_desc-divctcluster_space-allenccfv3_res-region_tabular.csv",
+            "fname": "source-yao2023abca_desc-divictcluster_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "",
+            "checksum": "9f097046a128ba6906546ab19ce9ad18",
             "url": {
-                "osf": "",
+                "osf": "et8c2",
                 "original": ""
             },
             "tags": [
@@ -492,9 +492,9 @@
             "fname": "source-yao2023abca_desc-structcluster_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "8bfd1ab87eb582142afa34175f64d0bb",
             "url": {
-                "osf": "",
+                "osf": "kzyqc",
                 "original": ""
             },
             "tags": [
@@ -511,9 +511,9 @@
             "fname": "source-yao2023abca_desc-subsctcluster_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "yao2023abca",
             "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "",
+            "checksum": "1401e8b263f5027336db0fbf075218f6",
             "url": {
-                "osf": "",
+                "osf": "afqvk",
                 "original": ""
             },
             "tags": [
@@ -530,7 +530,7 @@
             "fname": "source-zhang2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "zhang2023abca",
             "regionmapping": "source-zhang2023abca_division_regionmapping.csv",
-            "genemapping": "source-zhang2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
             "checksum": "e8d2278285f1774cb2b845abcd207be9",
             "url": {
                 "osf": "ea29g",
@@ -550,7 +550,7 @@
             "fname": "source-zhang2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "zhang2023abca",
             "regionmapping": "source-zhang2023abca_structure_regionmapping.csv",
-            "genemapping": "source-zhang2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
             "checksum": "695423515b20bffaccaae80c5837e52b",
             "url": {
                 "osf": "dscr2",
@@ -570,7 +570,7 @@
             "fname": "source-zhang2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
             "rel_path": "zhang2023abca",
             "regionmapping": "source-zhang2023abca_substructure_regionmapping.csv",
-            "genemapping": "source-zhang2023abca_merfish_genemapping.csv",
+            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
             "checksum": "c48cb8a06a637dba4fa0c0e520613d4e",
             "url": {
                 "osf": "6jckm",

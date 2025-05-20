@@ -46,7 +46,7 @@
                 },
                 "avgatl-10um": {
                     "format": "nifti",
-                    "fname": "atl-allenccfv3_res-10um_avgatl.nii.gz",
+                    "fname": "atl-allenccfv3_res-10um_avgtpl.nii.gz",
                     "rel_path": "allen/ccfv3",
                     "checksum": "9487f754fd396bab59f37955ef6c6437",
                     "url": {
@@ -57,7 +57,7 @@
                 },
                 "avgatl-25um": {
                     "format": "nifti",
-                    "fname": "atl-allenccfv3_res-25um_avgatl.nii.gz",
+                    "fname": "atl-allenccfv3_res-25um_avgtpl.nii.gz",
                     "rel_path": "allen/ccfv3",
                     "checksum": "8a3229aa42bd8c48ae0c140f2f7fdf02",
                     "url": {
@@ -68,7 +68,7 @@
                 },
                 "avgatl-50um": {
                     "format": "nifti",
-                    "fname": "atl-allenccfv3_res-50um_avgatl.nii.gz",
+                    "fname": "atl-allenccfv3_res-50um_avgtpl.nii.gz",
                     "rel_path": "allen/ccfv3",
                     "checksum": "8a780205dfd0c1d6da41f08a511eb3f4",
                     "url": {
@@ -79,7 +79,7 @@
                 },
                 "avgatl-100um": {
                     "format": "nifti",
-                    "fname": "atl-allenccfv3_res-100um_avgatl.nii.gz",
+                    "fname": "atl-allenccfv3_res-100um_avgtpl.nii.gz",
                     "rel_path": "allen/ccfv3",
                     "checksum": "05e1cc493073c25c5600adf7977895b5",
                     "url": {
