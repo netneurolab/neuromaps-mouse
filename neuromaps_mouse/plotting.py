@@ -162,8 +162,7 @@ def plot_allenccfv3_ortho(
         #
         ax.set_aspect("equal", adjustable="datalim")
         ax.set_box_aspect(1)
-        if view != "axial":
-            ax.invert_yaxis()
+
         ax.axis("off")
 
         if equal_scale:
@@ -180,6 +179,8 @@ def plot_allenccfv3_ortho(
             )
         else:
             ax.autoscale()
+        if view in ["sagittal", "coronal"]:
+            ax.invert_yaxis()
 
     if show_colorbar:
         cax = inset_axes(axes[-1], width=1, height=0.1, loc="lower right")
@@ -415,8 +416,6 @@ def plot_allenccfv3_lightbox(
         #
         ax.set_aspect("equal", adjustable="datalim")
         ax.set_box_aspect(1)
-        if view != "axial":
-            ax.invert_yaxis()
         ax.axis("off")
 
         if equal_scale:
@@ -433,6 +432,9 @@ def plot_allenccfv3_lightbox(
             )
         else:
             ax.autoscale()
+        
+        if view in ["sagittal", "coronal"]:
+            ax.invert_yaxis()
 
     if show_colorbar:
         cax = inset_axes(axes[-1], width=1, height=0.1, loc="lower right")

@@ -101,13 +101,13 @@ def load_region_data(
         / annotation_full["regionmapping"]
     )
 
-    original_values = np.loadtxt(
-        data_dir
-        / "annotations"
-        / annotation_full["rel_path"]
-        / annotation_full["fname"],
-        delimiter=",",
-    )
+    # original_values = np.loadtxt(
+    #     data_dir
+    #     / "annotations"
+    #     / annotation_full["rel_path"]
+    #     / annotation_full["fname"],
+    #     delimiter=",",
+    # )
     regionmapping = pd.read_csv(regionmapping_path)
 
     if annotation_full["format"] == "scalar":
