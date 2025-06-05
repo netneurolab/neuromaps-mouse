@@ -23,7 +23,7 @@ body:
       label: To Reproduce
       description: Minimal code or steps to reproduce the behavior
       value: |
-        >>> import netneurotools
+        >>> import neuromaps_mouse
         >>>
         >>>
       render: python
