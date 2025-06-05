@@ -26,6 +26,9 @@ jobs:
       - name: Install dependencies
         run: |
           pip install sphinx sphinx_rtd_theme sphinx-gallery
+      - name: Install neuromaps-mouse
+        run: |
+          pip install .
       - name: Build the docs
         run: |
           cd docs && make clean html
