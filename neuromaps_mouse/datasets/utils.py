@@ -14,6 +14,7 @@ except ImportError:
 
 
 def get_data_dir(data_dir=None):
+    """Get the data directory."""
     if data_dir is None:
         data_dir = os.environ.get(
             "MOUSEMAPS_DATA", str(Path.home() / "neuromaps-mouse-data")
@@ -63,6 +64,7 @@ def _osfify_url(osf_file_id):
 
 
 def fetch_files(annotations, file_type="annotations", data_dir=None, verbose=1):
+    """Fetch files from OSF."""
     targ_fname_list = []
     for annot in annotations:
         if file_type in ["annotations", "annotations-meta"]:
