@@ -5,8 +5,7 @@
       "name": "synaptome",
       "description": "Architecture of the Mouse Brain Synaptome",
       "file_desc": {
-        "typedensity": "Synaptic type density",
-        "similarity": "Synaptic similarity"
+        "typedensity": "Synaptic type density"
       },
       "comments": "Original source: ",
       "refs": [
@@ -45,7 +44,9 @@
         "wipsi": "Weighted ipsilateral strength index",
         "pvalipsi": "P values for wipsi",
         "wcontra": "Weighted contralateral strength index",
-        "pvalcontra": "P values for wcontra"
+        "pvalcontra": "P values for wcontra",
+        "distipsi": "Distance (mm) for ipsilateral projections",
+        "distcontra": "Distance (mm) for contralateral projections"
       },
       "comments": "Original source: Supplementary Table 3",
       "refs": [
@@ -148,7 +149,11 @@
       "description": "Allen Mouse Brain Atlas",
       "file_desc": {
         "sagittalenergy": "Expression energy of sagittal slices",
-        "coronalenergy": "Expression energy of coronal slices"
+        "coronalenergy": "Expression energy of coronal slices",
+        "sagittaldensity": "Expression density of sagittal slices",
+        "coronaldensity": "Expression density of coronal slices",
+        "sagittalintensity": "Expression intensity of sagittal slices",
+        "coronalintensity": "Expression intensity of coronal slices"
       },
       "comments": "",
       "warning": "This is a very large dataset, and may take a long time to download.",
@@ -232,16 +237,16 @@
         "impdivimean": "Average imputed regional gene expressions at the division level",
         "impstrumean": "Average imputed regional gene expressions at the structure level",
         "impsubsmean": "Average imputed regional gene expressions at the substructure level",
-        "divctclass": "Cell type (class) at the division level",
+        "divictclass": "Cell type (class) at the division level",
         "structclass": "Cell type (class) at the structure level",
         "subsctclass": "Cell type (class) at the substructure level",
-        "divctsubclass": "Cell type (subclass) at the division level",
+        "divictsubclass": "Cell type (subclass) at the division level",
         "structsubclass": "Cell type (subclass) at the structure level",
         "subsctsubclass": "Cell type (subclass) at the substructure level",
-        "divctsupertype": "Cell type (supertype) at the division level",
+        "divictsupertype": "Cell type (supertype) at the division level",
         "structsupertype": "Cell type (supertype) at the structure level",
         "subsctsupertype": "Cell type (supertype) at the substructure level",
-        "divctcluster": "Cell type (cluster) at the division level",
+        "divictcluster": "Cell type (cluster) at the division level",
         "structcluster": "Cell type (cluster) at the structure level",
         "subsctcluster": "Cell type (cluster) at the substructure level"
       },

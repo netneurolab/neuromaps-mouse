@@ -14,6 +14,7 @@ except ImportError:
 
 
 def get_data_dir(data_dir=None):
+    """Get the data directory."""
     if data_dir is None:
         data_dir = os.environ.get(
             "MOUSEMAPS_DATA", str(Path.home() / "neuromaps-mouse-data")
@@ -63,6 +64,7 @@ def _osfify_url(osf_file_id):
 
 
 def fetch_files(annotations, file_type="annotations", data_dir=None, verbose=1):
+    """Fetch files from OSF."""
     targ_fname_list = []
     for annot in annotations:
         if file_type in ["annotations", "annotations-meta"]:
@@ -139,7 +141,7 @@ def _filter_annots_by_keys(keys_dict):
     return filtered
 
 
-def _check_json(osfstorage_data):
+def _check_json(osfstorage_data, overwrite=False):
     """
     Check for errors in meta.json.
 
@@ -151,9 +153,11 @@ def _check_json(osfstorage_data):
     """
     # reload the datasets and meta json files
     from rich.console import Console
+    import importlib.resources
 
     console = Console()
 
+    # Load JSON files
     MOUSEMAPS_ATLASES = _load_resource_json("datasets/data/atlases.json")["atlases"]
     MOUSEMAPS_ANNOTS = _load_resource_json("datasets/data/annotations.json")[
         "annotations"
@@ -161,6 +165,11 @@ def _check_json(osfstorage_data):
     MOUSEMAPS_ANNOTS_META = _load_resource_json("datasets/data/annotations-meta.json")[
         "annotations-meta"
     ]
+
+    # Track if any changes were made
+    atlases_updated = False
+    annots_updated = False
+    annots_meta_updated = False
 
     console.print("ATLASES")
     for atlas_k, atlas_v in MOUSEMAPS_ATLASES.items():
@@ -170,21 +179,35 @@ def _check_json(osfstorage_data):
             if file_v["checksum"] == osfstorage_data[file_v["fname"]]["md5"]:
                 console.print("    [bold green]✓[/bold green] checksum")
             else:
-                console.print(
-                    f"    [bold red]x[/bold red] checksum local: {file_v['checksum']} remote: {osfstorage_data[file_v['fname']]['md5']}"
-                )
+                if overwrite:
+                    file_v["checksum"] = osfstorage_data[file_v["fname"]]["md5"]
+                    atlases_updated = True
+                    console.print("    [bold yellow]↻[/bold yellow] checksum updated")
+                else:
+                    console.print(
+                        f"    [bold red]x[/bold red] "
+                        f"checksum local: {file_v['checksum']} "
+                        f"remote: {osfstorage_data[file_v['fname']]['md5']}"
+                    )
 
             if file_v["url"]["osf"] == osfstorage_data[file_v["fname"]]["guid"]:
                 console.print("    [bold green]✓[/bold green] url")
             else:
-                console.print(
-                    f"    [bold red]x[/bold red] url local: {file_v['url']['osf']} remote: {osfstorage_data[file_v['fname']]['guid']}"
-                )
+                if overwrite:
+                    file_v["url"]["osf"] = osfstorage_data[file_v["fname"]]["guid"]
+                    atlases_updated = True
+                    console.print("    [bold yellow]↻[/bold yellow] url updated")
+                else:
+                    console.print(
+                        f"    [bold red]x[/bold red] "
+                        f"url local: {file_v['url']['osf']} "
+                        f"remote: {osfstorage_data[file_v['fname']]['guid']}"
+                    )
 
     console.print("\nANNOTS_META")
     for annot_meta in MOUSEMAPS_ANNOTS_META:
         console.print(f"{annot_meta['source']} {annot_meta['name']} >")
-        console.print("  \[annot files] >")
+        console.print(r"  \[annot files] >")
         for file_v in annot_meta["files"]:
             console.print(f"    {'-'.join(file_v)} >")
             try:
@@ -197,7 +220,7 @@ def _check_json(osfstorage_data):
             else:
                 console.print("      [bold red]x[/bold red] json")
 
-        console.print("  \[aux files] >")
+        console.print(r"  \[aux files] >")
         for aux_k, aux_v in annot_meta["aux_files"].items():
             console.print(f"    {aux_k} >")
 
@@ -207,21 +230,40 @@ def _check_json(osfstorage_data):
                 console.print(f"      {file_v['fname']} >")
                 if file_v["fname"] not in osfstorage_data:
                     console.print(
-                        f"        [bold red]x[/bold red] {file_v['fname']} not found in osfstorage"
+                        f"        [bold red]x[/bold red] "
+                        f"{file_v['fname']} not found in osfstorage"
                     )
                     continue
                 if file_v["checksum"] == osfstorage_data[file_v["fname"]]["md5"]:
                     console.print("        [bold green]✓[/bold green] checksum")
                 else:
-                    console.print(
-                        f"        [bold red]x[/bold red] checksum local: {file_v['checksum']} remote: {osfstorage_data[file_v['fname']]['md5']}"
-                    )
+                    if overwrite:
+                        file_v["checksum"] = osfstorage_data[file_v["fname"]]["md5"]
+                        annots_meta_updated = True
+                        console.print(
+                            "        [bold yellow]↻[/bold yellow] checksum updated"
+                        )
+                    else:
+                        console.print(
+                            f"        [bold red]x[/bold red] "
+                            f"checksum local: {file_v['checksum']} "
+                            f"remote: {osfstorage_data[file_v['fname']]['md5']}"
+                        )
                 if file_v["url"]["osf"] == osfstorage_data[file_v["fname"]]["guid"]:
                     console.print("        [bold green]✓[/bold green] url")
                 else:
-                    console.print(
-                        f"        [bold red]x[/bold red] url local: {file_v['url']['osf']} remote: {osfstorage_data[file_v['fname']]['guid']}"
-                    )
+                    if overwrite:
+                        file_v["url"]["osf"] = osfstorage_data[file_v["fname"]]["guid"]
+                        annots_meta_updated = True
+                        console.print(
+                            "        [bold yellow]↻[/bold yellow] url updated"
+                        )
+                    else:
+                        console.print(
+                            f"        [bold red]x[/bold red] "
+                            f"url local: {file_v['url']['osf']} "
+                            f"remote: {osfstorage_data[file_v['fname']]['guid']}"
+                        )
 
     console.print("\nANNOTS")
     for annot in MOUSEMAPS_ANNOTS:
@@ -230,20 +272,125 @@ def _check_json(osfstorage_data):
         )
         console.print(f"  {annotstr} >")
         if annot["fname"] not in osfstorage_data:
-            console.print(f"        [bold red]x[/bold red] {annot['fname']} not found in osfstorage")
+            console.print(
+                f"        [bold red]x[/bold red] "
+                f"{annot['fname']} not found in osfstorage"
+            )
             continue
         if annot["checksum"] == osfstorage_data[annot["fname"]]["md5"]:
             console.print("    [bold green]✓[/bold green] checksum")
         else:
-            console.print(
-                f"    [bold red]x[/bold red] checksum local: {annot['checksum']} remote: {osfstorage_data[annot['fname']]['md5']}"
-            )
+            if overwrite:
+                annot["checksum"] = osfstorage_data[annot["fname"]]["md5"]
+                annots_updated = True
+                console.print("    [bold yellow]↻[/bold yellow] checksum updated")
+            else:
+                console.print(
+                    f"    [bold red]x[/bold red] "
+                    f"checksum local: {annot['checksum']} "
+                    f"remote: {osfstorage_data[annot['fname']]['md5']}"
+                )
         if annot["url"]["osf"] == osfstorage_data[annot["fname"]]["guid"]:
             console.print("    [bold green]✓[/bold green] url")
         else:
-            console.print(
-                f"    [bold red]x[/bold red] url local: {annot['url']['osf']} remote: {osfstorage_data[annot['fname']]['guid']}"
+            if overwrite:
+                annot["url"]["osf"] = osfstorage_data[annot["fname"]]["guid"]
+                annots_updated = True
+                console.print("    [bold yellow]↻[/bold yellow] url updated")
+            else:
+                console.print(
+                    f"    [bold red]x[/bold red] "
+                    f"url local: {annot['url']['osf']} "
+                    f"remote: {osfstorage_data[annot['fname']]['guid']}"
+                )
+
+    # Write updated JSON files if changes were made
+    if atlases_updated:
+        atlases_data = {"atlases": MOUSEMAPS_ATLASES}
+        if getattr(importlib.resources, "files", None) is not None:
+            atlases_file = (
+                importlib.resources.files("neuromaps_mouse")
+                / "datasets/data/atlases.json"
             )
+        else:
+            from pkg_resources import resource_filename
+
+            atlases_file = resource_filename(
+                "neuromaps_mouse", "datasets/data/atlases.json"
+            )
+        with open(atlases_file, "w") as f:
+            json.dump(atlases_data, f, indent=2)
+        console.print("\n[bold green]✓[/bold green] Updated atlases.json")
+    if annots_updated:
+        annots_data = {"annotations": MOUSEMAPS_ANNOTS}
+        if getattr(importlib.resources, "files", None) is not None:
+            annots_file = (
+                importlib.resources.files("neuromaps_mouse")
+                / "datasets/data/annotations.json"
+            )
+        else:
+            from pkg_resources import resource_filename
+
+            annots_file = resource_filename(
+                "neuromaps_mouse", "datasets/data/annotations.json"
+            )
+        with open(annots_file, "w") as f:
+            json.dump(annots_data, f, indent=2)
+        console.print("[bold green]✓[/bold green] Updated annotations.json")
+    if annots_meta_updated:
+        annots_meta_data = {"annotations-meta": MOUSEMAPS_ANNOTS_META}
+        if getattr(importlib.resources, "files", None) is not None:
+            annots_meta_file = (
+                importlib.resources.files("neuromaps_mouse")
+                / "datasets/data/annotations-meta.json"
+            )
+        else:
+            from pkg_resources import resource_filename
+
+            annots_meta_file = resource_filename(
+                "neuromaps_mouse", "datasets/data/annotations-meta.json"
+            )
+        with open(annots_meta_file, "w") as f:
+            json.dump(annots_meta_data, f, indent=2)
+        console.print("[bold green]✓[/bold green] Updated annotations-meta.json")
+
+    # Check for files in OSF storage that are not referenced in JSON files
+    console.print("\nFILES IN OSF STORAGE NOT REFERENCED IN JSON")
+
+    # Collect all filenames referenced in JSON files
+    json_files = set()
+
+    # Atlas files
+    for atlas_v in MOUSEMAPS_ATLASES.values():
+        for file_v in atlas_v["files"].values():
+            json_files.add(file_v["fname"])
+
+    # Annotation files
+    for annot in MOUSEMAPS_ANNOTS:
+        json_files.add(annot["fname"])
+
+    # Annotation meta aux files
+    for annot_meta in MOUSEMAPS_ANNOTS_META:
+        for aux_v in annot_meta["aux_files"].values():
+            if not isinstance(aux_v, list):
+                aux_v = [aux_v]
+            for file_v in aux_v:
+                json_files.add(file_v["fname"])
+
+    # Find files in OSF storage not in JSON
+    unreferenced_files = set(osfstorage_data.keys()) - json_files
+
+    if unreferenced_files:
+        for fname in sorted(unreferenced_files):
+            console.print(f"  [bold yellow]?[/bold yellow] {fname}")
+        console.print(
+            f"\n[bold yellow]Found {len(unreferenced_files)} "
+            f"unreferenced files in OSF storage[/bold yellow]"
+        )
+    else:
+        console.print(
+            "  [bold green]✓[/bold green] All OSF storage files are referenced in JSON"
+        )
 
 
 def _check_osfstorage():
@@ -298,7 +445,9 @@ def _check_osfstorage():
                             f"      {file['attributes']['extra']['hashes']['md5']}"
                         )
                         if not file["attributes"]["guid"]:
-                            requests.get(f'https://osf.io/{OSF_NODEID}/files/osfstorage{file["attributes"]["path"]}')
+                            requests.get(
+                                f"https://osf.io/{OSF_NODEID}/files/osfstorage{file['attributes']['path']}"
+                            )
                         osfstorage_data[file["attributes"]["name"]] = {
                             "guid": file["attributes"]["guid"],
                             "md5": file["attributes"]["extra"]["hashes"]["md5"],
@@ -315,7 +464,9 @@ def _check_osfstorage():
                         f"      {file['attributes']['extra']['hashes']['md5']}"
                     )
                     if not file["attributes"]["guid"]:
-                        requests.get(f'https://osf.io/{OSF_NODEID}/files/osfstorage{file["attributes"]["path"]}')
+                        requests.get(
+                            f"https://osf.io/{OSF_NODEID}/files/osfstorage{file['attributes']['path']}"
+                        )
                     osfstorage_data[file["attributes"]["name"]] = {
                         "guid": file["attributes"]["guid"],
                         "md5": file["attributes"]["extra"]["hashes"]["md5"],
@@ -325,72 +476,16 @@ def _check_osfstorage():
     return osfstorage_data
 
 
-# def _fill_meta_json_refs(bib_file, json_file, overwrite=False, use_defaults=False):
-#     """
-#     Fill in citation information for references in a JSON file.
-
-#     For internal use only.
-
-#     Parameters
-#     ----------
-#     bib_file : str
-#         Path to BibTeX file containing references
-#     json_file : str
-#         Path to JSON file containing references
-#     overwrite : bool, optional
-#         Whether to overwrite existing citation information. Default: False
-#     use_defaults : bool, optional
-#         Whether to use default paths for `bib_file` and `json_file`. Default: False
-
-#     Returns
-#     -------
-#     None
-#     """
-#     if use_defaults:
-#         bib_file = \
-#             importlib.resources.files("neuromaps") / "datasets/data/neuromaps.bib"
-#         json_file = \
-#             importlib.resources.files("neuromaps") / "datasets/data/meta.json"
-
-#     from pybtex import PybtexEngine
-#     engine = PybtexEngine()
-
-#     def _get_citation(key):
-#         s = engine.format_from_file(
-#             filename=bib_file, style="unsrt",
-#             citations=[key], output_backend="plaintext"
-#             )
-#         return s.strip("\n").replace("[1] ", "")
-
-#     with open(json_file) as src:
-#         nm_meta = json.load(src)
-
-#     for entry in nm_meta["annotations"]:
-#         for bib_category in ["primary", "secondary"]:
-#             for bib_item in entry["refs"][bib_category]:
-#                 if bib_item["bibkey"] not in ["", None]:
-#                     if bib_item["citation"] == "" or overwrite:
-#                         bib_item["citation"] = _get_citation(bib_item["bibkey"])
-
-#     with open(json_file, "w") as dst:
-#         json.dump(nm_meta, dst, indent=4)
-
-
 def _gen_doc_listofmaps_rst(listofmaps_file):
     """
     Generate a list of maps in reStructuredText format.
 
     For internal use only.
-
-    Parameters
-    ----------
-    listofmaps_file : str
-        Path to write the list of maps
-
-    Returns
-    -------
-    None
     """
+    MOUSEMAPS_ANNOTS_META = _load_resource_json("datasets/data/annotations-meta.json")[
+        "annotations-meta"
+    ]
+
     output = []
 
     output += [

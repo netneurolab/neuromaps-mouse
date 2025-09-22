@@ -432,7 +432,7 @@ def plot_allenccfv3_lightbox(
             )
         else:
             ax.autoscale()
-        
+
         if view in ["sagittal", "coronal"]:
             ax.invert_yaxis()
 

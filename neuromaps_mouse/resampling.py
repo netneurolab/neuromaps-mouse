@@ -1,4 +1,5 @@
 """Functions for resampling and aligning structures."""
+
 from pathlib import Path
 import subprocess
 import pandas as pd
@@ -91,16 +92,23 @@ def _get_nearest_descendant_region_allenccfv3(
 
 
 def align_structures_allenccfv3(acronyms_fixed, acronyms_moving, debug=False):
-
     df_fixed = query_structure_graph_allenccfv3(
-        acronyms_fixed, in_col="acronym", out_col=["acronym", "id", "structure_id_path"], verbose=0
+        acronyms_fixed,
+        in_col="acronym",
+        out_col=["acronym", "id", "structure_id_path"],
+        verbose=0,
     )
     df_moving = query_structure_graph_allenccfv3(
-        acronyms_moving, in_col="acronym", out_col=["acronym", "id", "structure_id_path"], verbose=0
+        acronyms_moving,
+        in_col="acronym",
+        out_col=["acronym", "id", "structure_id_path"],
+        verbose=0,
     )
 
     df_moving["id_ancestor_fixed"] = _get_nearest_ancestor_region_allenccfv3(
-        df_moving["structure_id_path"].to_list(), df_fixed["id"].to_list(), include_self=True
+        df_moving["structure_id_path"].to_list(),
+        df_fixed["id"].to_list(),
+        include_self=True,
     )
     df_moving["id_ancestor_fixed"] = df_moving["id_ancestor_fixed"].astype("Int64")
 
@@ -113,7 +121,9 @@ def align_structures_allenccfv3(acronyms_fixed, acronyms_moving, debug=False):
         )
         # also get descendant
         df_moving["id_descendant_fixed"] = _get_nearest_descendant_region_allenccfv3(
-            df_moving["id"].tolist(), df_fixed["structure_id_path"].tolist(), include_self=True
+            df_moving["id"].tolist(),
+            df_fixed["structure_id_path"].tolist(),
+            include_self=True,
         )
         df_moving["id_descendant_fixed_acronym"] = df_moving.apply(
             lambda x: get_feature_allenccfv3(
@@ -132,38 +142,49 @@ def match_structures_fuzzy_allenccfv3():
 
 
 def visualize_structure_alignment_allenccfv3(
-        acronyms_fixed, acronyms_moving, save_path=Path("./"), save_name="graphviz"
-    ):
+    acronyms_fixed, acronyms_moving, save_path=Path("./"), save_name="graphviz"
+):
     graphviz_path = shutil.which("dot")
     if graphviz_path is None:
         raise ValueError("Graphviz executable not found, please install graphviz")
-    
+
     if not isinstance(save_path, Path):
         save_path = Path(save_path)
 
     struct_csv = pd.read_csv(fetch_allenccfv3(which="structure-graph-csv"))
 
     df_fixed = query_structure_graph_allenccfv3(
-        acronyms_fixed, in_col="acronym", out_col=["acronym", "id", "structure_id_path"], verbose=0
+        acronyms_fixed,
+        in_col="acronym",
+        out_col=["acronym", "id", "structure_id_path"],
+        verbose=0,
     )
     df_moving = query_structure_graph_allenccfv3(
-        acronyms_moving, in_col="acronym", out_col=["acronym", "id", "structure_id_path"], verbose=0
+        acronyms_moving,
+        in_col="acronym",
+        out_col=["acronym", "id", "structure_id_path"],
+        verbose=0,
     )
 
     all_regions = [
-        _.strip("/").split("/") 
-        for _ in df_fixed["structure_id_path"].tolist() + df_moving["structure_id_path"].tolist()
+        _.strip("/").split("/")
+        for _ in df_fixed["structure_id_path"].tolist()
+        + df_moving["structure_id_path"].tolist()
     ]
-    all_regions = list(map(int, list(set([r for regions in all_regions for r in regions]))))
+    all_regions = list(
+        map(int, list(set([r for regions in all_regions for r in regions])))
+    )
 
     struct_csv_filtered = struct_csv[struct_csv["id"].isin(all_regions)]
-    struct_csv_filtered["parent_structure_id"] = struct_csv_filtered["parent_structure_id"].astype("Int64")
+    struct_csv_filtered["parent_structure_id"] = struct_csv_filtered[
+        "parent_structure_id"
+    ].astype("Int64")
 
     graphviz_script = [
         "digraph G {",
         'rankdir="LR";',
         'node [shape=box, fontname="Arial", fontsize=12];',
-        'edge [fontname="Arial", fontsize=10];'
+        'edge [fontname="Arial", fontsize=10];',
     ]
 
     for i, row in struct_csv_filtered.iterrows():
@@ -177,14 +198,18 @@ def visualize_structure_alignment_allenccfv3(
     for i, row in struct_csv_filtered.iterrows():
         if row["acronym"] == "root":
             continue
-        graphviz_script.append(
-            f"    {row['parent_structure_id']} -> {row['id']}"
-        )
-    graphviz_script += [
-        "}"
-    ]
+        graphviz_script.append(f"    {row['parent_structure_id']} -> {row['id']}")
+    graphviz_script += ["}"]
 
     with open(save_path / f"{save_name}.txt", "w", encoding="utf-8") as f:
         f.writelines("\n".join(graphviz_script))
 
-    subprocess.run([graphviz_path, "-Tsvg", f"{save_path / save_name}.txt", "-o", f"{save_path / save_name}.svg"])
+    subprocess.run(
+        [
+            graphviz_path,
+            "-Tsvg",
+            f"{save_path / save_name}.txt",
+            "-o",
+            f"{save_path / save_name}.svg",
+        ]
+    )
