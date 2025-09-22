@@ -1,380 +1,600 @@
 {
-    "annotations-meta": [
+  "annotations-meta": [
+    {
+      "source": "zhu2018",
+      "name": "synaptome",
+      "description": "Architecture of the Mouse Brain Synaptome",
+      "file_desc": {
+        "typedensity": "Synaptic type density",
+        "similarity": "Synaptic similarity"
+      },
+      "comments": "Original source: ",
+      "refs": [
         {
-            "source": "zhu2018",
-            "name": "synaptome",
-            "description": "Architecture of the Mouse Brain Synaptome",
-            "file_desc": {
-                "typedensity": "Synaptic type density",
-                "similarity": "Synaptic similarity"
-            },
-            "comments": "Original source: ",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["zhu2018", "typedensity", "allenccfv3", "region"],
-                ["zhu2018", "similarity", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": {
-                    "format": "regionmapping",
-                    "fname": "source-zhu2018_regionmapping.csv",
-                    "rel_path": "zhu2018",
-                    "checksum": "fddfe6a918b134a94246a14e1f2a1756",
-                    "url": {
-                        "osf": "26krg",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
-        },
-        {
-            "source": "oh2014",
-            "name": "structural connectome",
-            "description": "A mesoscale connectome of the mouse brain",
-            "file_desc": {
-                "wipsi": "Weighted ipsilateral strength index",
-                "pvalipsi": "P values for wipsi",
-                "wcontra": "Weighted contralateral strength index",
-                "pvalcontra": "P values for wcontra"
-            },
-            "comments": "Original source: Supplementary Table 3",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["oh2014", "wipsi", "allenccfv3", "region"],
-                ["oh2014", "pvalipsi", "allenccfv3", "region"],
-                ["oh2014", "wcontra", "allenccfv3", "region"],
-                ["oh2014", "pvalcontra", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": {
-                    "format": "regionmapping",
-                    "fname": "source-oh2014_regionmapping.csv",
-                    "rel_path": "oh2014",
-                    "checksum": "a21a9e80e9640b242c81cdc2e2fa456a",
-                    "url": {
-                        "osf": "hmd4j",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
-        },
-        {
-            "source": "ero2018",
-            "name": "cell type density",
-            "description": "A Cell Atlas for the Mouse Brain",
-            "file_desc": {
-                "celldensity": "Density of cell types"
-            },
-            "comments": "Original source: Supplementary Table 2",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["ero2018", "celldensity", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": {
-                    "format": "regionmapping",
-                    "fname": "source-ero2018_regionmapping.csv",
-                    "rel_path": "ero2018",
-                    "checksum": "ecd01018504e97b2fb759dd81d7ea670",
-                    "url": {
-                        "osf": "ncwtk",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
-        },
-        {
-            "source": "lein2006amba",
-            "name": "Allen Mouse Brain Atlas",
-            "description": "Allen Mouse Brain Atlas",
-            "file_desc": {
-                "sagittalenergy": "Expression energy of sagittal slices",
-                "coronalenergy": "Expression energy of coronal slices"
-            },
-            "comments": "",
-            "warning": "This is a very large dataset, and may take a long time to download.",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["lein2006amba", "sagittalenergy", "allenccfv3", "region"],
-                ["lein2006amba", "coronalenergy", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": {
-                    "format": "regionmapping",
-                    "fname": "source-lein2006amba_regionmapping.csv",
-                    "rel_path": "lein2006amba",
-                    "checksum": "2b980e10435356e57f2c78941e03dfd6",
-                    "url": {
-                        "osf": "s38we",
-                        "original": ""
-                    },
-                    "comments": ""
-                },
-                "featuremapping": {
-                    "format": "genemapping",
-                    "fname": "source-lein2006amba_genemapping.csv",
-                    "rel_path": "lein2006amba",
-                    "checksum": "768e61a67dd68b7dfdf7971737a7bb7d",
-                    "url": {
-                        "osf": "6zmuh",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
-        },
-        {
-            "source": "yao2023abca",
-            "name": "ABC Atlas (MERFISH-C57BL6J-638850)",
-            "description": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
-            "file_desc": {
-                "divimean": "Average regional gene expressions at the division level",
-                "strumean": "Average regional gene expressions at the structure level",
-                "subsmean": "Average regional gene expressions at the substructure level",
-                "impdivimean": "Average imputed regional gene expressions at the division level",
-                "impstrumean": "Average imputed regional gene expressions at the structure level",
-                "impsubsmean": "Average imputed regional gene expressions at the substructure level",
-                "divctclass": "Cell type (class) at the division level",
-                "structclass": "Cell type (class) at the structure level",
-                "subsctclass": "Cell type (class) at the substructure level",
-                "divctsubclass": "Cell type (subclass) at the division level",
-                "structsubclass": "Cell type (subclass) at the structure level",
-                "subsctsubclass": "Cell type (subclass) at the substructure level",
-                "divctsupertype": "Cell type (supertype) at the division level",
-                "structsupertype": "Cell type (supertype) at the structure level",
-                "subsctsupertype": "Cell type (supertype) at the substructure level",
-                "divctcluster": "Cell type (cluster) at the division level",
-                "structcluster": "Cell type (cluster) at the structure level",
-                "subsctcluster": "Cell type (cluster) at the substructure level"
-            },
-            "comments": "Averaged hierarchically through substructure, structure, and division levels",
-            "warning": "This is a very large dataset, and may take a long time to download.",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["yao2023abca", "divimean", "allenccfv3", "region"],
-                ["yao2023abca", "strumean", "allenccfv3", "region"],
-                ["yao2023abca", "subsmean", "allenccfv3", "region"],
-                ["yao2023abca", "impdivimean", "allenccfv3", "region"],
-                ["yao2023abca", "impstrumean", "allenccfv3", "region"],
-                ["yao2023abca", "impsubsmean", "allenccfv3", "region"],
-                ["yao2023abca", "divictclass", "allenccfv3", "region"],
-                ["yao2023abca", "structclass", "allenccfv3", "region"],
-                ["yao2023abca", "subsctclass", "allenccfv3", "region"],
-                ["yao2023abca", "divictsubclass", "allenccfv3", "region"],
-                ["yao2023abca", "structsubclass", "allenccfv3", "region"],
-                ["yao2023abca", "subsctsubclass", "allenccfv3", "region"],
-                ["yao2023abca", "divictsupertype", "allenccfv3", "region"],
-                ["yao2023abca", "structsupertype", "allenccfv3", "region"],
-                ["yao2023abca", "subsctsupertype", "allenccfv3", "region"],
-                ["yao2023abca", "divictcluster", "allenccfv3", "region"],
-                ["yao2023abca", "structcluster", "allenccfv3", "region"],
-                ["yao2023abca", "subsctcluster", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": [
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-yao2023abca_division_regionmapping.csv",
-                        "rel_path": "yao2023abca",
-                        "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
-                        "url": {
-                            "osf": "547y6",
-                            "original": ""
-                        },
-                        "comments": ""
-                    },
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-yao2023abca_structure_regionmapping.csv",
-                        "rel_path": "yao2023abca",
-                        "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
-                        "url": {
-                            "osf": "a9bsy",
-                            "original": ""
-                        },
-                        "comments": ""
-                    },
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-yao2023abca_substructure_regionmapping.csv",
-                        "rel_path": "yao2023abca",
-                        "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
-                        "url": {
-                            "osf": "z4wqy",
-                            "original": ""
-                        },
-                        "comments": ""
-                    }
-                ],
-                "featuremapping": [
-                    {
-                        "format": "genemapping",
-                        "fname": "source-yao2023abca_merfish_genemapping.csv",
-                        "rel_path": "yao2023abca",
-                        "checksum": "d9cee1242bc13374b5e2beeea827de3e",
-                        "url": {
-                            "osf": "fytrb",
-                            "original": ""
-                        },
-                        "comments": ""
-                    },
-                    {
-                        "format": "genemapping",
-                        "fname": "source-yao2023abca_imputed_genemapping.csv",
-                        "rel_path": "yao2023abca",
-                        "checksum": "32f6749d2d172690e225629c70cb7aae",
-                        "url": {
-                            "osf": "xrcgh",
-                            "original": ""
-                        },
-                        "comments": ""
-                    }
-                ]
-            }
-        },
-        {
-            "source": "zhang2023abca",
-            "name": "ABC Atlas (Zhuang-ABCA)",
-            "description": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
-            "file_desc": {
-                "divimean": "Average regional gene expressions at the division level",
-                "strumean": "Average regional gene expressions at the structure level",
-                "subsmean": "Average regional gene expressions at the substructure level"
-            },
-            "comments": "Averaged hierarchically through substructure, structure, and division levels",
-            "warning": "This is a very large dataset, and may take a long time to download.",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["zhang2023abca", "divimean", "allenccfv3", "region"],
-                ["zhang2023abca", "strumean", "allenccfv3", "region"],
-                ["zhang2023abca", "subsmean", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": [
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-zhang2023abca_division_regionmapping.csv",
-                        "rel_path": "zhang2023abca",
-                        "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
-                        "url": {
-                            "osf": "6qnpk",
-                            "original": ""
-                        },
-                        "comments": ""
-                    },
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-zhang2023abca_structure_regionmapping.csv",
-                        "rel_path": "zhang2023abca",
-                        "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
-                        "url": {
-                            "osf": "xd8k2",
-                            "original": ""
-                        },
-                        "comments": ""
-                    },
-                    {
-                        "format": "regionmapping",
-                        "fname": "source-zhang2023abca_substructure_regionmapping.csv",
-                        "rel_path": "zhang2023abca",
-                        "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
-                        "url": {
-                            "osf": "ehfba",
-                            "original": ""
-                        },
-                        "comments": ""
-                    }
-                ],
-                "featuremapping": {
-                    "format": "genemapping",
-                    "fname": "source-zhang2023abca_merfish_genemapping.csv",
-                    "rel_path": "zhang2023abca",
-                    "checksum": "44b16a70c9cd2188d30900c29c2d8ba1",
-                    "url": {
-                        "osf": "xefs4",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
-        },
-        {
-            "source": "knox2018",
-            "name": "hi-res connectome",
-            "description": " High-resolution data-driven model of the mouse connectome",
-            "file_desc": {
-                "conndencontra": "Connection density (contralateral)",
-                "conndenipsi": "Connection density (ipsilateral)",
-                "connstrcontra": "Connection strength (contralateral)",
-                "connstripsi": "Connection strength (ipsilateral)",
-                "normconndencontra": "Normalized connection density (contralateral)",
-                "normconndenipsi": "Normalized connection density (ipsilateral)",
-                "normconnstrcontra": "Normalized connection strength (contralateral)",
-                "normconnstripsi": "Normalized connection strength (ipsilateral)"
-            },
-            "comments": "Note that the matrix is not symmetric. Rows are source regions and columns are target regions. For the contralaeral matrices, several missing columns (targets) are filled with NaN (['EW', 'OV', 'RM', 'RO', 'RPA'] for all 4 variants, and an additional 'VISa' for connection density (conndencontra)).",
-            "refs": [
-                {
-                    "citation": "",
-                    "bibkey": ""
-                }
-            ],
-            "files": [
-                ["knox2018", "conndencontra", "allenccfv3", "region"],
-                ["knox2018", "conndenipsi", "allenccfv3", "region"],
-                ["knox2018", "connstrcontra", "allenccfv3", "region"],
-                ["knox2018", "connstripsi", "allenccfv3", "region"],
-                ["knox2018", "normconndencontra", "allenccfv3", "region"],
-                ["knox2018", "normconndenipsi", "allenccfv3", "region"],
-                ["knox2018", "normconnstrcontra", "allenccfv3", "region"],
-                ["knox2018", "normconnstripsi", "allenccfv3", "region"]
-            ],
-            "aux_files": {
-                "regionmapping": {
-                    "format": "regionmapping",
-                    "fname": "source-knox2018_regionmapping.csv",
-                    "rel_path": "knox2018",
-                    "checksum": "",
-                    "url": {
-                        "osf": "",
-                        "original": ""
-                    },
-                    "comments": ""
-                }
-            }
+          "citation": "",
+          "bibkey": ""
         }
-    ]
+      ],
+      "files": [
+        [
+          "zhu2018",
+          "typedensity",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-zhu2018_regionmapping.csv",
+          "rel_path": "zhu2018",
+          "checksum": "c04520b402e11e704222195ca58217ed",
+          "url": {
+            "osf": "8z4yf",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "oh2014",
+      "name": "structural connectome",
+      "description": "A mesoscale connectome of the mouse brain",
+      "file_desc": {
+        "wipsi": "Weighted ipsilateral strength index",
+        "pvalipsi": "P values for wipsi",
+        "wcontra": "Weighted contralateral strength index",
+        "pvalcontra": "P values for wcontra"
+      },
+      "comments": "Original source: Supplementary Table 3",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "oh2014",
+          "wipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "pvalipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "wcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "pvalcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "distipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "oh2014",
+          "distcontra",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-oh2014_regionmapping.csv",
+          "rel_path": "oh2014",
+          "checksum": "38e150dbe5dffcf79ecc831279b63c88",
+          "url": {
+            "osf": "hc4da",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "ero2018",
+      "name": "cell type density",
+      "description": "A Cell Atlas for the Mouse Brain",
+      "file_desc": {
+        "celldensity": "Density of cell types"
+      },
+      "comments": "Original source: Supplementary Table 2",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "ero2018",
+          "celldensity",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-ero2018_regionmapping.csv",
+          "rel_path": "ero2018",
+          "checksum": "b33090df99577cb6af0951e6cac4082f",
+          "url": {
+            "osf": "wecfg",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "lein2006amba",
+      "name": "Allen Mouse Brain Atlas",
+      "description": "Allen Mouse Brain Atlas",
+      "file_desc": {
+        "sagittalenergy": "Expression energy of sagittal slices",
+        "coronalenergy": "Expression energy of coronal slices"
+      },
+      "comments": "",
+      "warning": "This is a very large dataset, and may take a long time to download.",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "lein2006amba",
+          "sagittalenergy",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "lein2006amba",
+          "coronalenergy",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "lein2006amba",
+          "sagittaldensity",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "lein2006amba",
+          "coronaldensity",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "lein2006amba",
+          "sagittalintensity",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "lein2006amba",
+          "coronalintensity",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-lein2006amba_regionmapping.csv",
+          "rel_path": "lein2006amba",
+          "checksum": "e77343fe2b4423677e7fbe4c8d2036b2",
+          "url": {
+            "osf": "aruf4",
+            "original": ""
+          },
+          "comments": ""
+        },
+        "featuremapping": {
+          "format": "genemapping",
+          "fname": "source-lein2006amba_genemapping.csv",
+          "rel_path": "lein2006amba",
+          "checksum": "768e61a67dd68b7dfdf7971737a7bb7d",
+          "url": {
+            "osf": "wqxu4",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "yao2023abca",
+      "name": "ABC Atlas (MERFISH-C57BL6J-638850)",
+      "description": "Mouse whole-brain transcriptomic cell type atlas (Hongkui Zeng)",
+      "file_desc": {
+        "divimean": "Average regional gene expressions at the division level",
+        "strumean": "Average regional gene expressions at the structure level",
+        "subsmean": "Average regional gene expressions at the substructure level",
+        "impdivimean": "Average imputed regional gene expressions at the division level",
+        "impstrumean": "Average imputed regional gene expressions at the structure level",
+        "impsubsmean": "Average imputed regional gene expressions at the substructure level",
+        "divctclass": "Cell type (class) at the division level",
+        "structclass": "Cell type (class) at the structure level",
+        "subsctclass": "Cell type (class) at the substructure level",
+        "divctsubclass": "Cell type (subclass) at the division level",
+        "structsubclass": "Cell type (subclass) at the structure level",
+        "subsctsubclass": "Cell type (subclass) at the substructure level",
+        "divctsupertype": "Cell type (supertype) at the division level",
+        "structsupertype": "Cell type (supertype) at the structure level",
+        "subsctsupertype": "Cell type (supertype) at the substructure level",
+        "divctcluster": "Cell type (cluster) at the division level",
+        "structcluster": "Cell type (cluster) at the structure level",
+        "subsctcluster": "Cell type (cluster) at the substructure level"
+      },
+      "comments": "Averaged hierarchically through substructure, structure, and division levels",
+      "warning": "This is a very large dataset, and may take a long time to download.",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "yao2023abca",
+          "divimean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "strumean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "subsmean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "impdivimean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "impstrumean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "impsubsmean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "divictclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "structclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "subsctclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "divictsubclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "structsubclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "subsctsubclass",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "divictsupertype",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "structsupertype",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "subsctsupertype",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "divictcluster",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "structcluster",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "yao2023abca",
+          "subsctcluster",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": [
+          {
+            "format": "regionmapping",
+            "fname": "source-yao2023abca_division_regionmapping.csv",
+            "rel_path": "yao2023abca",
+            "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
+            "url": {
+              "osf": "t3dum",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-yao2023abca_structure_regionmapping.csv",
+            "rel_path": "yao2023abca",
+            "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
+            "url": {
+              "osf": "4vkhw",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-yao2023abca_substructure_regionmapping.csv",
+            "rel_path": "yao2023abca",
+            "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
+            "url": {
+              "osf": "dmq8g",
+              "original": ""
+            },
+            "comments": ""
+          }
+        ],
+        "featuremapping": [
+          {
+            "format": "genemapping",
+            "fname": "source-yao2023abca_merfish_genemapping.csv",
+            "rel_path": "yao2023abca",
+            "checksum": "d9cee1242bc13374b5e2beeea827de3e",
+            "url": {
+              "osf": "cdpr9",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "genemapping",
+            "fname": "source-yao2023abca_imputed_genemapping.csv",
+            "rel_path": "yao2023abca",
+            "checksum": "32f6749d2d172690e225629c70cb7aae",
+            "url": {
+              "osf": "tq72d",
+              "original": ""
+            },
+            "comments": ""
+          }
+        ]
+      }
+    },
+    {
+      "source": "zhang2023abca",
+      "name": "ABC Atlas (Zhuang-ABCA)",
+      "description": "A molecularly defined and spatially resolved cell atlas of the whole mouse brain (Xiaowei Zhuang)",
+      "file_desc": {
+        "divimean": "Average regional gene expressions at the division level",
+        "strumean": "Average regional gene expressions at the structure level",
+        "subsmean": "Average regional gene expressions at the substructure level"
+      },
+      "comments": "Averaged hierarchically through substructure, structure, and division levels",
+      "warning": "This is a very large dataset, and may take a long time to download.",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "zhang2023abca",
+          "divimean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "zhang2023abca",
+          "strumean",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "zhang2023abca",
+          "subsmean",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": [
+          {
+            "format": "regionmapping",
+            "fname": "source-zhang2023abca_division_regionmapping.csv",
+            "rel_path": "zhang2023abca",
+            "checksum": "5e5e6e8cf2eeff5be9a123ec9ab819f9",
+            "url": {
+              "osf": "t26ud",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-zhang2023abca_structure_regionmapping.csv",
+            "rel_path": "zhang2023abca",
+            "checksum": "5f804ee4b034172fbe073a6b3025d1a9",
+            "url": {
+              "osf": "kw73s",
+              "original": ""
+            },
+            "comments": ""
+          },
+          {
+            "format": "regionmapping",
+            "fname": "source-zhang2023abca_substructure_regionmapping.csv",
+            "rel_path": "zhang2023abca",
+            "checksum": "00c5edc6a9c52c6553bfc05b601d91d1",
+            "url": {
+              "osf": "5egux",
+              "original": ""
+            },
+            "comments": ""
+          }
+        ],
+        "featuremapping": {
+          "format": "genemapping",
+          "fname": "source-zhang2023abca_merfish_genemapping.csv",
+          "rel_path": "zhang2023abca",
+          "checksum": "44b16a70c9cd2188d30900c29c2d8ba1",
+          "url": {
+            "osf": "94uvw",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    },
+    {
+      "source": "knox2018",
+      "name": "hi-res connectome",
+      "description": " High-resolution data-driven model of the mouse connectome",
+      "file_desc": {
+        "conndencontra": "Connection density (contralateral)",
+        "conndenipsi": "Connection density (ipsilateral)",
+        "connstrcontra": "Connection strength (contralateral)",
+        "connstripsi": "Connection strength (ipsilateral)",
+        "normconndencontra": "Normalized connection density (contralateral)",
+        "normconndenipsi": "Normalized connection density (ipsilateral)",
+        "normconnstrcontra": "Normalized connection strength (contralateral)",
+        "normconnstripsi": "Normalized connection strength (ipsilateral)"
+      },
+      "comments": "Note that the matrix is not symmetric. Rows are source regions and columns are target regions. For the contralaeral matrices, several missing columns (targets) are filled with NaN (['EW', 'OV', 'RM', 'RO', 'RPA'] for all 4 variants, and an additional 'VISa' for connection density (conndencontra)).",
+      "refs": [
+        {
+          "citation": "",
+          "bibkey": ""
+        }
+      ],
+      "files": [
+        [
+          "knox2018",
+          "conndencontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "conndenipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "connstrcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "connstripsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconndencontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconndenipsi",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconnstrcontra",
+          "allenccfv3",
+          "region"
+        ],
+        [
+          "knox2018",
+          "normconnstripsi",
+          "allenccfv3",
+          "region"
+        ]
+      ],
+      "aux_files": {
+        "regionmapping": {
+          "format": "regionmapping",
+          "fname": "source-knox2018_regionmapping.csv",
+          "rel_path": "knox2018",
+          "checksum": "30506af3217b6700d1cdf906311ea7b0",
+          "url": {
+            "osf": "ad39w",
+            "original": ""
+          },
+          "comments": ""
+        }
+      }
+    }
+  ]
 }

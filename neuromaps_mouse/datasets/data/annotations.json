@@ -1,737 +1,836 @@
 {
-    "annotations": [
-        {
-            "format": "tabular",
-            "source": "zhu2018",
-            "desc": "typedensity",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-zhu2018_desc-typedensity_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "zhu2018",
-            "regionmapping": "source-zhu2018_regionmapping.csv",
-            "checksum": "2ae62b613fb9da375cf24fb852dcf611",
-            "url": {
-                "osf": "gq23f",
-                "original": ""
-            },
-            "tags": [
-                "synaptome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "zhu2018",
-            "desc": "similarity",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-zhu2018_desc-similarity_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "zhu2018",
-            "regionmapping": "source-zhu2018_regionmapping.csv",
-            "checksum": "30cd659596b71230d7593dd3ae95df71",
-            "url": {
-                "osf": "p3bke",
-                "original": ""
-            },
-            "tags": [
-                "synaptome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "oh2014",
-            "desc": "wipsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-oh2014_desc-wipsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "oh2014",
-            "regionmapping": "source-oh2014_regionmapping.csv",
-            "checksum": "d5fe5fc0e614ff0c1c06a466f9b6d505",
-            "url": {
-                "osf": "ds49x",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "oh2014",
-            "desc": "pvalipsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-oh2014_desc-pvalipsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "oh2014",
-            "regionmapping": "source-oh2014_regionmapping.csv",
-            "checksum": "952657a43232499f9a92e109ea7e6400",
-            "url": {
-                "osf": "ye9gb",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "oh2014",
-            "desc": "wcontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-oh2014_desc-wcontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "oh2014",
-            "regionmapping": "source-oh2014_regionmapping.csv",
-            "checksum": "efa5aededbd6d7cf8657e0acd813f7b7",
-            "url": {
-                "osf": "xzewd",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "oh2014",
-            "desc": "pvalcontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-oh2014_desc-pvalcontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "oh2014",
-            "regionmapping": "source-oh2014_regionmapping.csv",
-            "checksum": "ad507ad2a34b7e211f27946b607ab0de",
-            "url": {
-                "osf": "hxzy8",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "ero2018",
-            "desc": "celldensity",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-ero2018_desc-celldensity_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "ero2018",
-            "regionmapping": "source-ero2018_regionmapping.csv",
-            "checksum": "232e96d4720687d8c8880aaf63842fef",
-            "url": {
-                "osf": "bnw6e",
-                "original": ""
-            },
-            "tags": [
-                "cell-type"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "lein2006amba",
-            "desc": "sagittalenergy",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-lein2006amba_desc-sagittalenergy_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "lein2006amba",
-            "regionmapping": "source-lein2006amba_regionmapping.csv",
-            "featuremapping": "source-lein2006amba_genemapping.csv",
-            "checksum": "2f132fba4514ab7f46ca8f4e752abbef",
-            "url": {
-                "osf": "m2fjk",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "lein2006amba",
-            "desc": "coronalenergy",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-lein2006amba_desc-coronalenergy_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "lein2006amba",
-            "regionmapping": "source-lein2006amba_regionmapping.csv",
-            "featuremapping": "source-lein2006amba_genemapping.csv",
-            "checksum": "1e0fec49fa260ac0860f0176c9a70153",
-            "url": {
-                "osf": "ewc4p",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "divimean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
-            "checksum": "d73144d2e205a775d35c21fb910ad3a8",
-            "url": {
-                "osf": "8jvzb",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "strumean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
-            "checksum": "d5b29bfe1b7846b6435eb184a254229b",
-            "url": {
-                "osf": "6pbdu",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "subsmean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
-            "checksum": "990db1c540e3d581ea3da8e5c209dbaa",
-            "url": {
-                "osf": "uv7b5",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "impdivimean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-impdivimean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
-            "checksum": "0c28305968bb562521ca8f81fce0ab2e",
-            "url": {
-                "osf": "c83et",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "impstrumean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-impstrumean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
-            "checksum": "993dfd5b301c54d87dca3700b52114db",
-            "url": {
-                "osf": "up6b8",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "impsubsmean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-impsubsmean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
-            "checksum": "b973ff0ca87cc00654271ad2918adffe",
-            "url": {
-                "osf": "pjz4f",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "divictclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-divictclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "236f17df9f4a109dd9b4d53473abd78b",
-            "url": {
-                "osf": "kxa82",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "structclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-structclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "ca0e1f509f29e3ae0a01ba6cf3773c72",
-            "url": {
-                "osf": "kmzfg",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "subsctclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-subsctclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "d53d30d4f6c16a106c97b92ec5bcf054",
-            "url": {
-                "osf": "hv75c",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "divictsubclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-divictsubclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "ef81df4222c416ddc17d5924f4ed281e",
-            "url": {
-                "osf": "egufd",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "structsubclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-structsubclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "cd3bc01041e10cf558405a788b3f4140",
-            "url": {
-                "osf": "b4ve5",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "subsctsubclass",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-subsctsubclass_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "1dac5420e06555f642185160b19376d0",
-            "url": {
-                "osf": "bm4kg",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "divictsupertype",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-divictsupertype_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "bd42bbddc7e90a4c70c3f8c73880d7a6",
-            "url": {
-                "osf": "mt6r8",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "structsupertype",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-structsupertype_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "f1fbd16053eb10bd25da52a8c9a72516",
-            "url": {
-                "osf": "v3rbu",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "subsctsupertype",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-subsctsupertype_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "78c9f968b12a9ffd106b45b15fb9baef",
-            "url": {
-                "osf": "cwfvr",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "divictcluster",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-divictcluster_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_division_regionmapping.csv",
-            "checksum": "9f097046a128ba6906546ab19ce9ad18",
-            "url": {
-                "osf": "et8c2",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "structcluster",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-structcluster_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
-            "checksum": "8bfd1ab87eb582142afa34175f64d0bb",
-            "url": {
-                "osf": "kzyqc",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "yao2023abca",
-            "desc": "subsctcluster",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-yao2023abca_desc-subsctcluster_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "yao2023abca",
-            "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
-            "checksum": "1401e8b263f5027336db0fbf075218f6",
-            "url": {
-                "osf": "afqvk",
-                "original": ""
-            },
-            "tags": [
-                "celltype"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "zhang2023abca",
-            "desc": "divimean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-zhang2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "zhang2023abca",
-            "regionmapping": "source-zhang2023abca_division_regionmapping.csv",
-            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
-            "checksum": "e8d2278285f1774cb2b845abcd207be9",
-            "url": {
-                "osf": "ea29g",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "zhang2023abca",
-            "desc": "strumean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-zhang2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "zhang2023abca",
-            "regionmapping": "source-zhang2023abca_structure_regionmapping.csv",
-            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
-            "checksum": "695423515b20bffaccaae80c5837e52b",
-            "url": {
-                "osf": "dscr2",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "tabular",
-            "source": "zhang2023abca",
-            "desc": "subsmean",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-zhang2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
-            "rel_path": "zhang2023abca",
-            "regionmapping": "source-zhang2023abca_substructure_regionmapping.csv",
-            "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
-            "checksum": "c48cb8a06a637dba4fa0c0e520613d4e",
-            "url": {
-                "osf": "6jckm",
-                "original": ""
-            },
-            "tags": [
-                "gene"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "conndencontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-conndencontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "conndenipsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-conndenipsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "connstrcontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-connstrcontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "connstripsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-connstripsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "normconndencontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-normconndencontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "normconndenipsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-normconndenipsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "normconnstrcontra",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-normconnstrcontra_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        },
-        {
-            "format": "matrix",
-            "source": "knox2018",
-            "desc": "normconnstripsi",
-            "space": "allenccfv3",
-            "res": "region",
-            "fname": "source-knox2018_desc-normconnstripsi_space-allenccfv3_res-region_matrix.csv",
-            "rel_path": "knox2018",
-            "regionmapping": "source-knox2018_regionmapping.csv",
-            "checksum": "",
-            "url": {
-                "osf": "",
-                "original": ""
-            },
-            "tags": [
-                "connectome"
-            ],
-            "comments": ""
-        }
-    ]
+  "annotations": [
+    {
+      "format": "tabular",
+      "source": "zhu2018",
+      "desc": "typedensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-zhu2018_desc-typedensity_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "zhu2018",
+      "regionmapping": "source-zhu2018_regionmapping.csv",
+      "checksum": "4f5c1480467bb8e0f2b6d7f169584f0e",
+      "url": {
+        "osf": "n9apq",
+        "original": ""
+      },
+      "tags": [
+        "synaptome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "wipsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-wipsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "06d252bee73a56eb04ad15509bad6314",
+      "url": {
+        "osf": "26uek",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "pvalipsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-pvalipsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "0aefdd7da03957f3dd6f32141dff6f34",
+      "url": {
+        "osf": "4vyxp",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "wcontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-wcontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "b7585bf6b8974d4a2fd670d7536a2f0d",
+      "url": {
+        "osf": "kxjgq",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "distcontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-distcontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "673305b649809da5ce6269754799d992",
+      "url": {
+        "osf": "aqj87",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "distipsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-distipsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "49cde2492ef1d49e29082b040eb183df",
+      "url": {
+        "osf": "tcvw3",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "oh2014",
+      "desc": "pvalcontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-oh2014_desc-pvalcontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "oh2014",
+      "regionmapping": "source-oh2014_regionmapping.csv",
+      "checksum": "e61177bd09106a9a5a3502023af841ba",
+      "url": {
+        "osf": "hdqpj",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "ero2018",
+      "desc": "celldensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-ero2018_desc-celldensity_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "ero2018",
+      "regionmapping": "source-ero2018_regionmapping.csv",
+      "checksum": "5485d799e15dadb542a8a4722595e660",
+      "url": {
+        "osf": "vp3hn",
+        "original": ""
+      },
+      "tags": [
+        "cell-type"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "sagittalenergy",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-sagittalenergy_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "c76a2d852e6d9f5b0c55f4c490bc0c51",
+      "url": {
+        "osf": "3xt7b",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "coronalenergy",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-coronalenergy_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "b95aa547d91276e1d89629afcd8d61ad",
+      "url": {
+        "osf": "g8yfe",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "sagittalintensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-sagittalintensity_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "304129a8690f8f34af53d4c6c24dff95",
+      "url": {
+        "osf": "tsu4n",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "coronalintensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-coronalintensity_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "03eccd09266431326a1d72e0788ae146",
+      "url": {
+        "osf": "xnb9z",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "coronaldensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-coronaldensity_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "5950d006aca3e497cd4338b31c6baba2",
+      "url": {
+        "osf": "w5g8f",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "lein2006amba",
+      "desc": "sagittaldensity",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-lein2006amba_desc-sagittaldensity_space-allenccfv3_res-region_tabular.csv.gz",
+      "rel_path": "lein2006amba",
+      "regionmapping": "source-lein2006amba_regionmapping.csv",
+      "featuremapping": "source-lein2006amba_genemapping.csv",
+      "checksum": "984759eb8e30439e1e274fcd229a7bd9",
+      "url": {
+        "osf": "2wsjd",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "divimean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
+      "checksum": "05f811de0276bc8014cb13d4b4e8614e",
+      "url": {
+        "osf": "d84bx",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "strumean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
+      "checksum": "a6b6e2faba1047fd6ce447edf0795006",
+      "url": {
+        "osf": "n3pxa",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "subsmean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_merfish_genemapping.csv",
+      "checksum": "e5c276862910954593da88d4cd003265",
+      "url": {
+        "osf": "3adyh",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "impdivimean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-impdivimean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
+      "checksum": "a2fea4bfb6dd93aa89359195548c8c34",
+      "url": {
+        "osf": "4es3f",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "impstrumean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-impstrumean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
+      "checksum": "25912b71dd1eeb0a4f5493715576c81d",
+      "url": {
+        "osf": "h2yw6",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "impsubsmean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-impsubsmean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "featuremapping": "source-yao2023abca_imputed_genemapping.csv",
+      "checksum": "6aea63e7f91a21fbaf4e244931db3e31",
+      "url": {
+        "osf": "9dm8q",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "divictclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-divictclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "checksum": "406e0ee99e929010de177971a3416524",
+      "url": {
+        "osf": "sqpwa",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "structclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-structclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "checksum": "4a9943f1dd48fb216f6ed835a4db3887",
+      "url": {
+        "osf": "hwtud",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "subsctclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-subsctclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "checksum": "83e1b86f5cb7aad7b9f5616bc3c7dc13",
+      "url": {
+        "osf": "b53gu",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "divictsubclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-divictsubclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "checksum": "d935830ed591e27b5ffe410f5c5c2172",
+      "url": {
+        "osf": "dnxag",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "structsubclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-structsubclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "checksum": "e0327edb8473428902e05f45d0e35a21",
+      "url": {
+        "osf": "yz9tr",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "subsctsubclass",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-subsctsubclass_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "checksum": "04c3d96f01cf8b1fa60afc8c5ea59577",
+      "url": {
+        "osf": "djmp5",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "divictsupertype",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-divictsupertype_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "checksum": "ef679f066c070afb652c4694428cbf7a",
+      "url": {
+        "osf": "mgzud",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "structsupertype",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-structsupertype_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "checksum": "bb4fd3bcb6e29218003a3b63ecee450f",
+      "url": {
+        "osf": "sx3rv",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "subsctsupertype",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-subsctsupertype_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "checksum": "058a282f08983ac98d08215ebafefba7",
+      "url": {
+        "osf": "zurt3",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "divictcluster",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-divictcluster_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_division_regionmapping.csv",
+      "checksum": "f0ed4ba6d6f7bd405db5e6089c0aa1e8",
+      "url": {
+        "osf": "c92x3",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "structcluster",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-structcluster_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_structure_regionmapping.csv",
+      "checksum": "4f2ab9af6f8a6caa4aa9e892dd6ed6cc",
+      "url": {
+        "osf": "ygv4d",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "yao2023abca",
+      "desc": "subsctcluster",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-yao2023abca_desc-subsctcluster_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "yao2023abca",
+      "regionmapping": "source-yao2023abca_substructure_regionmapping.csv",
+      "checksum": "fa28a2d883cf4de9d9c484b0028fc147",
+      "url": {
+        "osf": "yzjdn",
+        "original": ""
+      },
+      "tags": [
+        "celltype"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "zhang2023abca",
+      "desc": "divimean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-zhang2023abca_desc-divimean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "zhang2023abca",
+      "regionmapping": "source-zhang2023abca_division_regionmapping.csv",
+      "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
+      "checksum": "d8e3378b5b4ac74cb0bb3005e698ab8d",
+      "url": {
+        "osf": "xb5na",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "zhang2023abca",
+      "desc": "strumean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-zhang2023abca_desc-strumean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "zhang2023abca",
+      "regionmapping": "source-zhang2023abca_structure_regionmapping.csv",
+      "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
+      "checksum": "4c87adfaecc12f15b6028337f69d3501",
+      "url": {
+        "osf": "vyhpa",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "tabular",
+      "source": "zhang2023abca",
+      "desc": "subsmean",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-zhang2023abca_desc-subsmean_space-allenccfv3_res-region_tabular.csv",
+      "rel_path": "zhang2023abca",
+      "regionmapping": "source-zhang2023abca_substructure_regionmapping.csv",
+      "featuremapping": "source-zhang2023abca_merfish_genemapping.csv",
+      "checksum": "379a9b4bf850083ab44cd554b3557609",
+      "url": {
+        "osf": "jdh48",
+        "original": ""
+      },
+      "tags": [
+        "gene"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "conndencontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-conndencontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "2f98810c09594175901f3aa523af5a70",
+      "url": {
+        "osf": "a72us",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "conndenipsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-conndenipsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "d28f037f54666e200dd18f4e7ef3eb5e",
+      "url": {
+        "osf": "34b7q",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "connstrcontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-connstrcontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "d8167cb020b6497194e746b8191417c5",
+      "url": {
+        "osf": "6n4xt",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "connstripsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-connstripsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "df3fe5576b512425b29d134a5ebfd667",
+      "url": {
+        "osf": "vnqbd",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "normconndencontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-normconndencontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "60904f5e70e88acdbbfed1f2755b7d52",
+      "url": {
+        "osf": "8u5wy",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "normconndenipsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-normconndenipsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "a997459bbd3112104a74dc213f1d8cf0",
+      "url": {
+        "osf": "vrs6a",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "normconnstrcontra",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-normconnstrcontra_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "9e14b6ca910c5c9cc7cbba2a38d157ff",
+      "url": {
+        "osf": "qnrd6",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    },
+    {
+      "format": "matrix",
+      "source": "knox2018",
+      "desc": "normconnstripsi",
+      "space": "allenccfv3",
+      "res": "region",
+      "fname": "source-knox2018_desc-normconnstripsi_space-allenccfv3_res-region_matrix.csv",
+      "rel_path": "knox2018",
+      "regionmapping": "source-knox2018_regionmapping.csv",
+      "checksum": "37b0eee06731a8bf324cd46e8c4f7259",
+      "url": {
+        "osf": "ze8vf",
+        "original": ""
+      },
+      "tags": [
+        "connectome"
+      ],
+      "comments": ""
+    }
+  ]
 }
