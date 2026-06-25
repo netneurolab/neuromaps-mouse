@@ -131,13 +131,16 @@ def _match_annots_by_tuple(annot_tuple_list):
 def _filter_annots_by_keys(keys_dict):
     filtered = []
     for annot in MOUSEMAPS_ANNOTS:
+        match = True
         for key in ["source", "desc", "space", "res", "format"]:
             value = keys_dict[key]
             if value is not None and annot[key] != value:
+                match = False
                 break
         if keys_dict["tag"] is not None and keys_dict["tag"] not in annot["tags"]:
-            break
-        filtered.append(annot)
+            match = False
+        if match:
+            filtered.append(annot)
     return filtered
 
 
